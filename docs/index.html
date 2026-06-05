@@ -37,18 +37,16 @@
     }
     .hero {
       display: grid;
-      grid-template-columns: 132px 1fr;
-      gap: 28px;
+      gap: 24px;
       align-items: center;
-      padding: 56px 0 44px;
+      padding: 46px 0 42px;
     }
-    .logo {
-      width: 132px;
-      height: 132px;
-      border-radius: 28px;
+    .title-art {
+      width: min(760px, 100%);
+      border-radius: 12px;
       background: #fff;
       box-shadow: 0 16px 45px rgba(31, 58, 118, 0.12);
-      padding: 12px;
+      display: block;
     }
     h1 {
       margin: 0 0 10px;
@@ -185,16 +183,7 @@
       font-size: 14px;
     }
     @media (max-width: 760px) {
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 36px 0 32px;
-      }
-      .logo {
-        width: 96px;
-        height: 96px;
-        border-radius: 20px;
-      }
+      .hero { padding: 32px 0 30px; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -202,7 +191,7 @@
 <body>
   <header>
     <div class="wrap hero">
-      <img class="logo" src="./logo.png" alt="Awesome Personalization in MLLMs logo">
+      <img class="title-art" src="./title.png" alt="Awesome Personalization in MLLMs">
       <div>
         <h1>Awesome Personalization in MLLMs</h1>
         <p class="subtitle">A paper summary on personalization in LLMs and MLLMs, covering personalized memory, alignment, benchmarks, and retrieval.</p>
