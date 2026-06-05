@@ -4,7 +4,7 @@
 
 # Awesome Personalization in MLLMs
 
-> 个性化多模态大模型论文列表，关注 **记忆、对齐、Benchmark 和检索**。
+> 关于 LLM 和 MLLM 个性化的论文总结，覆盖 **个性化记忆、对齐、Benchmark 和检索**。
 
 [English README](./README.md) | [在线主页](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
@@ -19,14 +19,10 @@
 
 ## 目录
 
-- [研究脉络](#研究脉络)
 - [个性化记忆](#个性化记忆)
 - [个性化对齐](#个性化对齐)
 - [Benchmark 与评估](#benchmark-与评估)
 - [个性化检索](#个性化检索)
-- [个性化多模态模型](#个性化多模态模型)
-- [数据集与任务](#数据集与任务)
-- [贡献](#贡献)
 
 ## 研究脉络
 

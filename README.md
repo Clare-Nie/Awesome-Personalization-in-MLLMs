@@ -4,7 +4,7 @@
 
 # Awesome Personalization in MLLMs
 
-> A curated list of papers, benchmarks, datasets, and systems on personalization in LLMs and MLLMs, with a focus on **memory, alignment, benchmarks, and retrieval**.
+> A paper summary on personalization in LLMs and MLLMs, covering **personalized memory, alignment, benchmarks, and retrieval**.
 
 [中文 README](./README_zh.md) | [Project Page](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
@@ -19,14 +19,10 @@ This repository tracks work around four connected questions:
 
 ## Contents
 
-- [Survey Map](#survey-map)
 - [Personalized Memory](#personalized-memory)
 - [Personalized Alignment](#personalized-alignment)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [Personalized Retrieval](#personalized-retrieval)
-- [Personalized Multimodal Models](#personalized-multimodal-models)
-- [Datasets and Tasks](#datasets-and-tasks)
-- [Contributing](#contributing)
 
 ## Survey Map
 
