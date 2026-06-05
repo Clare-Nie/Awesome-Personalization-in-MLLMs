@@ -4,25 +4,27 @@
 
 # Awesome Personalization in MLLMs
 
-> A curated list of papers, benchmarks, datasets, and systems on personalization in LLMs and MLLMs, with a focus on **memory, alignment, and evaluation**.
+> A curated list of papers, benchmarks, datasets, and systems on personalization in LLMs and MLLMs, with a focus on **memory, alignment, benchmarks, and retrieval**.
 
-[中文 README](./README_zh.md)
+[中文 README](./README_zh.md) | [Project Page](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
 Personalized LLMs and MLLMs aim to move beyond one-size-fits-all assistants. Instead of only optimizing for average human preference, they need to understand a specific user: long-term goals, evolving preferences, implicit personas, multimodal context, and when personalization should or should not be applied.
 
-This repository tracks work around three connected questions:
+This repository tracks work around four connected questions:
 
 - **Memory:** what should an agent remember, update, retrieve, and forget?
 - **Alignment:** how should a model adapt to individual preferences, personalities, and contexts?
-- **Evaluation:** how do we benchmark long-term, dynamic, implicit, and multimodal personalization?
+- **Benchmarks:** how do we evaluate long-term, dynamic, implicit, and multimodal personalization?
+- **Retrieval:** how should personalized systems retrieve the right user context, memory, and evidence?
 
 ## Contents
 
 - [Survey Map](#survey-map)
-- [Long-Term Memory for Agents](#long-term-memory-for-agents)
-- [Personalized Multimodal Models](#personalized-multimodal-models)
+- [Personalized Memory](#personalized-memory)
 - [Personalized Alignment](#personalized-alignment)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
+- [Personalized Retrieval](#personalized-retrieval)
+- [Personalized Multimodal Models](#personalized-multimodal-models)
 - [Datasets and Tasks](#datasets-and-tasks)
 - [Contributing](#contributing)
 
@@ -30,12 +32,13 @@ This repository tracks work around three connected questions:
 
 | Direction | Core Question | Representative Work |
 | :--- | :--- | :--- |
-| Long-term memory | What should be stored, updated, retrieved, and forgotten? | MemGPT, A-Mem, Mem0, MemoryOS, LightMem, MIRIX, M3-Agent, MemVerse |
+| Personalized memory | What should be stored, updated, retrieved, and forgotten? | MemGPT, A-Mem, Mem0, MemoryOS, LightMem, MIRIX, M3-Agent, MemVerse |
 | Personalized alignment | How can a model adapt to individual preferences and personalities? | Personality Alignment, Interaction Alignment, ALIGNX, RLPA / Dynamic Profile, PrefDisco, PAMU |
+| Benchmarks | How do we test long-term user modeling beyond generic QA? | LaMP, LoCoMo, LongMemEval, PERSONAMEM, Persona-MME, PersonaFeedback, PerMemBench |
+| Personalized retrieval | How should systems select the right user context and evidence? | RAG-style memory retrieval, graph memory, preference-aware retrieval, storage gating |
 | Multimodal personalization | How can visual context, personal concepts, and user-specific memories support MLLMs? | MC-LLaVA, Yo'LLaVA, MyVLM, PersonaVLM |
-| Evaluation | How do we test long-term user modeling beyond generic QA? | LaMP, LoCoMo, LongMemEval, PERSONAMEM, Persona-MME, PersonaFeedback, PerMemBench |
 
-## Long-Term Memory for Agents
+## Personalized Memory
 
 ### Foundational Memory Systems
 
@@ -67,20 +70,6 @@ This repository tracks work around three connected questions:
 
 - **MemVerse: Multimodal Memory for Lifelong Learning Agents** (2025.12)  
   Focuses on multimodal memory for lifelong agents that continuously accumulate and reuse user-specific experience.
-
-## Personalized Multimodal Models
-
-- **MC-LLaVA: Multi-Concept Personalized Vision-Language Model**  
-  Studies personalization in vision-language models through user-specific or concept-specific visual representations.
-
-- **Yo'LLaVA: Your Personalized Language and Vision Assistant** (2024.03)  
-  Explores personalized vision-language assistance, emphasizing user-specific visual concepts and personal context.
-
-- **MyVLM: Personalizing VLMs for User-Specific Queries** (2024.06)  
-  Investigates user-specific visual-language understanding and personalized responses for VLMs.
-
-- **PersonaVLM: Long-Term Personalized Multimodal LLMs** (CVPR 2026 / 2026.03)  
-  A unified framework for long-term personalized multimodal agents, combining user preference memory, visual concepts, long-term memory, and dynamic persona alignment. It also introduces Persona-MME for evaluation.
 
 ## Personalized Alignment
 
@@ -130,6 +119,38 @@ This repository tracks work around three connected questions:
 
 - **Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents (PerMemBench)** (2026.05)  
   Evaluates session-level storage gating: whether a session should be stored as long-term memory for a specific user.
+
+## Personalized Retrieval
+
+Personalized retrieval connects memory and generation: the model must decide which user history, preference, profile, image, or past event should be retrieved for the current request.
+
+- **Memory-augmented retrieval for agents**  
+  Retrieves user memories from long-term memory stores, often using embedding search, graph memory, recency, importance, or hybrid ranking.
+
+- **Preference-aware retrieval**  
+  Retrieves memories based on whether they match the user's current preference state, not only semantic similarity.
+
+- **Context-aware retrieval**  
+  Decides whether personalization is appropriate for the current task before injecting user-specific context.
+
+- **Storage-aware retrieval**  
+  Works together with memory writing policies such as PerMemBench: if important information was never stored, retrieval cannot recover it later.
+
+This section is still expanding. Contributions on personalized RAG, user-aware retrieval, memory retrieval, and multimodal retrieval are welcome.
+
+## Personalized Multimodal Models
+
+- **MC-LLaVA: Multi-Concept Personalized Vision-Language Model**  
+  Studies personalization in vision-language models through user-specific or concept-specific visual representations.
+
+- **Yo'LLaVA: Your Personalized Language and Vision Assistant** (2024.03)  
+  Explores personalized vision-language assistance, emphasizing user-specific visual concepts and personal context.
+
+- **MyVLM: Personalizing VLMs for User-Specific Queries** (2024.06)  
+  Investigates user-specific visual-language understanding and personalized responses for VLMs.
+
+- **PersonaVLM: Long-Term Personalized Multimodal LLMs** (CVPR 2026 / 2026.03)  
+  A unified framework for long-term personalized multimodal agents, combining user preference memory, visual concepts, long-term memory, and dynamic persona alignment. It also introduces Persona-MME for evaluation.
 
 ## Datasets and Tasks
 

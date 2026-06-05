@@ -4,25 +4,27 @@
 
 # Awesome Personalization in MLLMs
 
-> 个性化多模态大模型论文列表，关注 **记忆、对齐和评估**。
+> 个性化多模态大模型论文列表，关注 **记忆、对齐、Benchmark 和检索**。
 
-[English README](./README.md)
+[English README](./README.md) | [在线主页](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
 个性化 LLM / MLLM 的目标，不只是让模型对“平均用户”表现更好，而是让模型理解一个具体用户：长期目标、动态偏好、隐式 persona、多模态上下文，以及什么时候应该使用个性化信息、什么时候不应该使用。
 
-这个仓库主要整理三个问题：
+这个仓库主要整理四个问题：
 
 - **记忆：** agent 应该记住什么、更新什么、检索什么、遗忘什么？
 - **对齐：** 模型如何适配不同用户的偏好、人格和场景？
-- **评估：** 如何评测长期、动态、隐式、多模态的个性化能力？
+- **Benchmark：** 如何评测长期、动态、隐式、多模态的个性化能力？
+- **检索：** 个性化系统如何检索正确的用户上下文、记忆和证据？
 
 ## 目录
 
 - [研究脉络](#研究脉络)
-- [长期记忆系统](#长期记忆系统)
-- [个性化多模态模型](#个性化多模态模型)
+- [个性化记忆](#个性化记忆)
 - [个性化对齐](#个性化对齐)
 - [Benchmark 与评估](#benchmark-与评估)
+- [个性化检索](#个性化检索)
+- [个性化多模态模型](#个性化多模态模型)
 - [数据集与任务](#数据集与任务)
 - [贡献](#贡献)
 
@@ -30,12 +32,13 @@
 
 | 方向 | 核心问题 | 代表工作 |
 | :--- | :--- | :--- |
-| 长期记忆 | 什么该存、什么该更新、什么该检索、什么该遗忘？ | MemGPT, A-Mem, Mem0, MemoryOS, LightMem, MIRIX, M3-Agent, MemVerse |
+| 个性化记忆 | 什么该存、什么该更新、什么该检索、什么该遗忘？ | MemGPT, A-Mem, Mem0, MemoryOS, LightMem, MIRIX, M3-Agent, MemVerse |
 | 个性化对齐 | 模型如何适配个体偏好、人格和上下文？ | Personality Alignment, Interaction Alignment, ALIGNX, RLPA / Dynamic Profile, PrefDisco, PAMU |
+| Benchmark | 如何评测长期用户建模，而不是只做通用 QA？ | LaMP, LoCoMo, LongMemEval, PERSONAMEM, Persona-MME, PersonaFeedback, PerMemBench |
+| 个性化检索 | 如何选择正确的用户上下文和证据？ | RAG-style memory retrieval, graph memory, preference-aware retrieval, storage gating |
 | 多模态个性化 | 图像、个人概念、视觉记忆如何支持个性化 MLLM？ | MC-LLaVA, Yo'LLaVA, MyVLM, PersonaVLM |
-| 评估 | 如何评测长期用户建模，而不是只做通用 QA？ | LaMP, LoCoMo, LongMemEval, PERSONAMEM, Persona-MME, PersonaFeedback, PerMemBench |
 
-## 长期记忆系统
+## 个性化记忆
 
 ### 基础记忆系统
 
@@ -67,20 +70,6 @@
 
 - **MemVerse: Multimodal Memory for Lifelong Learning Agents**（2025.12）  
   关注 lifelong agent 的多模态记忆，让系统持续积累并复用用户相关经验。
-
-## 个性化多模态模型
-
-- **MC-LLaVA: Multi-Concept Personalized Vision-Language Model**  
-  研究视觉语言模型中的多概念个性化，关注用户特定或概念特定的视觉表示。
-
-- **Yo'LLaVA: Your Personalized Language and Vision Assistant**（2024.03）  
-  探索个性化视觉语言助手，强调用户专属视觉概念和个人上下文。
-
-- **MyVLM: Personalizing VLMs for User-Specific Queries**（2024.06）  
-  研究面向用户特定查询的 VLM 个性化理解与回答。
-
-- **PersonaVLM: Long-Term Personalized Multimodal LLMs**（CVPR 2026 / 2026.03）  
-  长期个性化多模态 agent 框架，结合用户偏好记忆、视觉概念、长期记忆和动态人格对齐，并提出 Persona-MME benchmark。
 
 ## 个性化对齐
 
@@ -130,6 +119,38 @@
 
 - **Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents (PerMemBench)**（2026.05）  
   评估 session-level storage gating，即某段交互是否值得为特定用户写入长期记忆。
+
+## 个性化检索
+
+个性化检索连接记忆和生成：系统需要判断当前请求应该检索哪些用户历史、偏好、profile、图像或过去事件。
+
+- **Memory-augmented retrieval for agents**  
+  从长期记忆库中检索用户记忆，常结合 embedding search、图记忆、recency、importance 或 hybrid ranking。
+
+- **Preference-aware retrieval**  
+  不只看语义相似度，还要看检索结果是否符合用户当前偏好状态。
+
+- **Context-aware retrieval**  
+  在注入用户信息前，先判断当前任务是否适合个性化。
+
+- **Storage-aware retrieval**  
+  和记忆写入策略配合：如果重要信息一开始没有被存储，后续检索再强也无法恢复。
+
+这一部分仍在扩展，欢迎补充 personalized RAG、user-aware retrieval、memory retrieval 和 multimodal retrieval 相关工作。
+
+## 个性化多模态模型
+
+- **MC-LLaVA: Multi-Concept Personalized Vision-Language Model**  
+  研究视觉语言模型中的多概念个性化，关注用户特定或概念特定的视觉表示。
+
+- **Yo'LLaVA: Your Personalized Language and Vision Assistant**（2024.03）  
+  探索个性化视觉语言助手，强调用户专属视觉概念和个人上下文。
+
+- **MyVLM: Personalizing VLMs for User-Specific Queries**（2024.06）  
+  研究面向用户特定查询的 VLM 个性化理解与回答。
+
+- **PersonaVLM: Long-Term Personalized Multimodal LLMs**（CVPR 2026 / 2026.03）  
+  长期个性化多模态 agent 框架，结合用户偏好记忆、视觉概念、长期记忆和动态人格对齐，并提出 Persona-MME benchmark。
 
 ## 数据集与任务
 
