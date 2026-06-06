@@ -3,7 +3,7 @@
 </p>
 
 
-> 面向个性化 LLM 和 MLLM 的系统性调研与前沿进展整理，覆盖个性化 ![memory](https://img.shields.io/badge/memory-0f9f8f?style=flat-square)、![alignment](https://img.shields.io/badge/alignment-7a4ef3?style=flat-square)、![retrieval](https://img.shields.io/badge/retrieval-0b6b92?style=flat-square) 和 ![evaluation](https://img.shields.io/badge/evaluation-b45a00?style=flat-square)。
+> 面向个性化 LLM 和 MLLM 的系统性调研与前沿进展整理，覆盖**个性化记忆**、**对齐**、**检索**和**评估**。
 
 [English README](./README.md) | [在线主页](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 

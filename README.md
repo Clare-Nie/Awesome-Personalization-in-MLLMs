@@ -3,7 +3,7 @@
 </p>
 
 
-> The most comprehensive survey and frontier tracking repository for personalized LLMs and MLLMs, covering personalized ![Memory](https://img.shields.io/badge/memory-0f9f8f?style=flat-square), ![Alignment](https://img.shields.io/badge/alignment-7a4ef3?style=flat-square), ![Retrieval](https://img.shields.io/badge/retrieval-0b6b92?style=flat-square), and ![Evaluation](https://img.shields.io/badge/evaluation-b45a00?style=flat-square).
+> The most comprehensive survey and frontier tracking repository for personalized LLMs and MLLMs, covering **personalized memory**, **alignment**, **retrieval**, and **evaluation**.
 
 [中文 README](./README_zh.md) | [Project Page](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
