@@ -227,7 +227,7 @@
                 if (line.includes('Personalized Memory')) currentCat = 'Memory';
                 else if (line.includes('Personalized Alignment')) currentCat = 'Alignment';
                 else if (line.includes('Personalized Retrieval')) currentCat = 'Retrieval';
-                else if (line.includes('Benchmarks and Evaluation')) currentCat = 'Evaluation';
+                else if (line.includes('Personalized Evaluation') || line.includes('Benchmarks and Evaluation')) currentCat = 'Evaluation';
                 
                 // Parse table rows corresponding to papers
                 if (line.startsWith('|') && !line.includes('---') && !line.includes('Date | Paper Title') && !line.includes('Direction | Core Question')) {

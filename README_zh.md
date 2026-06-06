@@ -18,7 +18,7 @@
 | **个性化记忆** | agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？ |
 | **个性化对齐** | 模型如何适配个体偏好、人格和上下文？ |
 | **个性化检索** | 系统如何选择正确的用户上下文、记忆和证据？ |
-| **Benchmark 与评估** | 如何评测长期、动态、隐式、多模态的个性化能力？ |
+| **Personalized Evaluation** | 如何评测长期、动态、隐式、多模态的个性化能力？ |
 
 ## 📑 Table of Contents
 
@@ -37,7 +37,7 @@
 
 <br>
 
-- [Benchmark 与评估](#benchmark-与评估)
+- [Personalized Evaluation](#personalized-evaluation)
 
 ## 🧠 个性化记忆
 
@@ -124,7 +124,7 @@
 | 2023.04 | [A Personalized Dense Retrieval Framework for Unified Information Access](https://arxiv.org/abs/2304.13654) | UMass Amherst / Lowe's | SIGIR 2023 | [HansiZeng/UIAA](https://github.com/HansiZeng/UIAA) <br> ![Stars](https://img.shields.io/github/stars/HansiZeng/UIAA?style=flat-square&logo=github) |
 
 
-## 📊 Benchmark 与评估
+## 📊 Personalized Evaluation
 
 > ![#b45a00](https://img.shields.io/badge/-_#b45a00-b45a00?style=flat-square) *如何评测长期、动态、隐式、多模态的个性化能力？*
 

@@ -18,7 +18,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | **Personalized Memory** | What should an agent store, update, retrieve, compress, and forget? |
 | **Personalized Alignment** | How can a model adapt to individual preferences, personalities, and contexts? |
 | **Personalized Retrieval** | How should systems select the right user context, memory, and evidence? |
-| **Benchmarks and Evaluation** | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
+| **Personalized Evaluation** | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
 
 ## 📑 Table of Contents
 
@@ -29,7 +29,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
   - [Latent Memory Mechanisms](#latent-memory-mechanisms)
 - [Personalized Alignment](#personalized-alignment)
 - [Personalized Retrieval](#personalized-retrieval)
-- [Benchmarks and Evaluation](#benchmarks-and-evaluation)
+- [Personalized Evaluation](#personalized-evaluation)
 
 <br>
 
@@ -161,7 +161,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 <br>
 
-## 📊 Benchmarks and Evaluation
+## 📊 Personalized Evaluation
 
 > ![#b45a00](https://img.shields.io/badge/-_#b45a00-b45a00?style=flat-square) *How do we evaluate long-term, dynamic, implicit, and multimodal personalization?*
 
