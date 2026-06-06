@@ -22,18 +22,22 @@
 
 ## 📑 Table of Contents
 
-- [📖 Overview](#overview)
-- [🧠 个性化记忆](#个性化记忆)
-- [🎯 个性化对齐](#个性化对齐)
-- [🔍 个性化检索](#个性化检索)
-- [📊 Benchmark 与评估](#benchmark-与评估)
-- [🤝 贡献](#贡献)
+- [![Memory](https://img.shields.io/badge/个性化记忆-0f9f8f?style=flat-square)](#个性化记忆)
+  - [基于记忆架构](#基于记忆架构)
+  - [个性化记忆架构](#个性化记忆架构)
+  - [Latent Memory 机制](#latent-memory-机制)
+
+- [![Alignment](https://img.shields.io/badge/个性化对齐-7a4ef3?style=flat-square)](#个性化对齐)
+
+- [![Retrieval](https://img.shields.io/badge/个性化检索-0b6b92?style=flat-square)](#个性化检索)
+
+- [![Evaluation](https://img.shields.io/badge/Benchmark_与评估-b45a00?style=flat-square)](#benchmark-与评估)
 
 ## 🧠 个性化记忆
 
 > ![#0f9f8f](https://img.shields.io/badge/-_#0f9f8f-0f9f8f?style=flat-square) *agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？*
 
-### 🏛️ 基于记忆架构
+### 基于记忆架构
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -47,7 +51,7 @@
 | 2023.10 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | UC Berkeley | arXiv | [letta-ai/letta](https://github.com/letta-ai/letta) <br> ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&logo=github) |
 
 
-### 🧩 个性化记忆架构
+### 个性化记忆架构
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -59,7 +63,7 @@
 | 2025.07 | [MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957) | MIRIX AI | arXiv | [Mirix-AI/MIRIX](https://github.com/Mirix-AI/MIRIX) <br> ![Stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=flat-square&logo=github) |
 
 
-### 🗜️ Latent Memory 机制
+### Latent Memory 机制
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |

@@ -22,18 +22,22 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 ## 📑 Table of Contents
 
-- [📖 Overview](#overview)
-- [🧠 Personalized Memory](#personalized-memory)
-- [🎯 Personalized Alignment](#personalized-alignment)
-- [🔍 Personalized Retrieval](#personalized-retrieval)
-- [📊 Benchmarks and Evaluation](#benchmarks-and-evaluation)
-- [🤝 Contributing](#contributing)
+- [![Memory](https://img.shields.io/badge/Personalized_Memory-0f9f8f?style=flat-square)](#personalized-memory)
+  - [Memory Architectures](#memory-architectures)
+  - [Personalized Memory Architectures](#personalized-memory-architectures)
+  - [Latent Memory Mechanisms](#latent-memory-mechanisms)
+
+- [![Alignment](https://img.shields.io/badge/Personalized_Alignment-7a4ef3?style=flat-square)](#personalized-alignment)
+
+- [![Retrieval](https://img.shields.io/badge/Personalized_Retrieval-0b6b92?style=flat-square)](#personalized-retrieval)
+
+- [![Evaluation](https://img.shields.io/badge/Benchmarks_&_Evaluation-b45a00?style=flat-square)](#benchmarks-and-evaluation)
 
 ## 🧠 Personalized Memory
 
 > ![#0f9f8f](https://img.shields.io/badge/-_#0f9f8f-0f9f8f?style=flat-square) *What should an agent store, update, retrieve, compress, and forget?*
 
-### 🏛️ Memory Architectures
+### Memory Architectures
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -47,7 +51,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.10 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | UC Berkeley | arXiv | [letta-ai/letta](https://github.com/letta-ai/letta) <br> ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&logo=github) |
 
 
-### 🧩 Personalized Memory Architectures
+### Personalized Memory Architectures
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -59,7 +63,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2025.07 | [MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957) | MIRIX AI | arXiv | [Mirix-AI/MIRIX](https://github.com/Mirix-AI/MIRIX) <br> ![Stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=flat-square&logo=github) |
 
 
-### 🗜️ Latent Memory Mechanisms
+### Latent Memory Mechanisms
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
