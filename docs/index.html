@@ -8,57 +8,64 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            background-color: #ffffff; 
+            background-color: #fafafa; 
             color: #111827; 
         }
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #f3f4f6;
+        }
         .stat-box { 
-            background-color: #f6f6f6; 
-            border-radius: 12px; 
-            padding: 16px 24px; 
+            background-color: #f7f6f4; 
+            border-radius: 16px; 
+            padding: 24px 32px; 
             text-align: center; 
         }
         .stat-num { 
-            font-size: 2.25rem; 
+            font-size: 2.75rem; 
             font-weight: 700; 
             color: #111827; 
-            line-height: 1.2;
+            line-height: 1.1;
         }
         .stat-label { 
-            font-size: 0.875rem; 
+            font-size: 0.9rem; 
             color: #6b7280; 
-            margin-top: 4px; 
+            font-weight: 500;
+            margin-top: 6px; 
         }
         .paper-card { 
             border: 1px solid #e5e7eb; 
-            border-radius: 12px; 
-            padding: 24px; 
+            border-radius: 16px; 
+            padding: 24px 28px; 
             margin-bottom: -1px; /* Overlap borders */
             transition: all 0.2s; 
-            display: block; 
+            display: flex; 
             text-decoration: none; 
             background: white;
         }
         .paper-card:first-child {
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
         }
         .paper-card:last-child {
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
             margin-bottom: 0;
         }
         .paper-card:hover { 
-            border-color: #7a4ef3; 
-            box-shadow: 0 4px 12px rgba(122, 78, 243, 0.08); 
+            border-color: #d1d5db; 
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); 
             z-index: 10;
             position: relative;
         }
         .filter-btn { 
             border: 1px solid #e5e7eb; 
             border-radius: 9999px; 
-            padding: 6px 16px; 
-            font-size: 0.875rem; 
-            color: #4b5563; 
+            padding: 8px 20px; 
+            font-size: 0.9rem; 
+            font-weight: 500;
+            color: #6b7280; 
             transition: all 0.2s; 
             cursor: pointer; 
             white-space: nowrap; 
@@ -66,14 +73,15 @@
         }
         .filter-btn:hover { 
             border-color: #d1d5db; 
-            background-color: #f9fafb; 
+            color: #111827;
         }
         .filter-btn.active { 
-            border-color: #7a4ef3; 
-            color: #7a4ef3; 
+            border-color: #7B5EFA; 
+            color: #7B5EFA; 
+            background-color: #f4f0ff;
         }
         .cat-badge { 
-            padding: 4px 10px; 
+            padding: 4px 12px; 
             border-radius: 9999px; 
             font-size: 0.75rem; 
             font-weight: 600; 
@@ -81,32 +89,48 @@
     </style>
 </head>
 <body class="antialiased min-h-screen">
+    <nav class="nav-glass sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-bold text-lg text-gray-900 tracking-tight">
+                <span class="text-[#7B5EFA] text-xl leading-none">✿</span>
+                Personalization MLLMs
+            </div>
+            <div class="flex items-center gap-6 text-sm font-medium text-gray-500">
+                <a href="#" class="text-gray-900 hover:text-[#7B5EFA] transition">Home</a>
+                <a href="https://github.com/Clare-Nie/Awesome-Personalization-in-MLLMs/blob/main/README_zh.md" target="_blank" class="hover:text-gray-900 transition">中文版</a>
+                <a href="https://github.com/Clare-Nie/Awesome-Personalization-in-MLLMs" target="_blank" class="bg-[#7B5EFA] hover:bg-[#6b4ce6] text-white px-4 py-2 rounded-lg flex items-center gap-1.5 shadow-sm transition">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.026 1.592 1.026 2.683 0 3.842-2.339 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="max-w-5xl mx-auto px-6 py-16">
         
         <!-- Header Section -->
-        <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-12">
-            <div class="flex-1">
-                <h1 class="text-3xl font-bold text-gray-900 mb-3 tracking-tight">Awesome Personalization in MLLMs</h1>
-                <p class="text-gray-600 mb-5 text-[17px]">A curated collection of research on personalizing LLMs and MLLMs, covering memory, alignment, retrieval, and evaluation.</p>
-                <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-gray-200 text-xs font-medium text-gray-500 bg-white">
-                    <svg class="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-10 mb-16">
+            <div class="flex-1 mt-2">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-5 tracking-tight">Awesome Personalization in MLLMs</h1>
+                <p class="text-gray-500 mb-6 text-lg max-w-2xl leading-relaxed">A curated collection of research on personalizing LLMs and MLLMs: aligning individual preferences, building long-term memory, and personalized retrieval.</p>
+                <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-gray-200 text-[13px] font-medium text-gray-400 bg-white">
+                    <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
                     Auto-synced from GitHub README
                 </div>
             </div>
             
             <div class="flex gap-4 shrink-0">
-                <div class="stat-box min-w-[110px]">
+                <div class="stat-box min-w-[120px]">
                     <div class="stat-num" id="stat-papers">--</div>
                     <div class="stat-label">Papers</div>
                 </div>
-                <div class="stat-box min-w-[130px]">
+                <div class="stat-box min-w-[150px]">
                     <div class="stat-num" id="stat-years">----</div>
                     <div class="stat-label">Coverage</div>
                 </div>
             </div>
         </div>
 
-        <hr class="border-gray-100 mb-10">
+        <hr class="border-gray-100 mb-14">
 
         <!-- Controls Section -->
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-2">
