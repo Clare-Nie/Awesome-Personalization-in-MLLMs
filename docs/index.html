@@ -169,6 +169,7 @@
             
             <div class="flex gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 hide-scrollbar" id="filterContainer">
                 <button class="filter-btn active" data-cat="All">All</button>
+                <button class="filter-btn" data-cat="Survey">Survey</button>
                 <button class="filter-btn" data-cat="Memory">Memory</button>
                 <button class="filter-btn" data-cat="Alignment">Alignment</button>
                 <button class="filter-btn" data-cat="Retrieval">Retrieval</button>
@@ -186,10 +187,11 @@
         let allPapers = [];
         
         const catColors = {
+            'Survey': '#8a78f2',
             'Memory': '#5f58c8',
             'Alignment': '#6f5bed',
             'Retrieval': '#4f8fe8',
-            'Evaluation': '#8a78f2'
+            'Evaluation': '#7db4ff'
         };
 
         async function init() {
@@ -220,10 +222,11 @@
             
             for (let line of lines) {
                 // Determine current section via headers
-                if (line.includes('Personalized Memory')) currentCat = 'Memory';
-                else if (line.includes('Personalized Alignment')) currentCat = 'Alignment';
-                else if (line.includes('Personalized Retrieval')) currentCat = 'Retrieval';
-                else if (line.includes('Personalized Evaluation') || line.includes('Benchmarks and Evaluation')) currentCat = 'Evaluation';
+                if (/^##\s+.*Surveys/.test(line)) currentCat = 'Survey';
+                else if (/^##\s+.*Personalized Memory/.test(line)) currentCat = 'Memory';
+                else if (/^##\s+.*Personalized Alignment/.test(line)) currentCat = 'Alignment';
+                else if (/^##\s+.*Personalized Retrieval/.test(line)) currentCat = 'Retrieval';
+                else if (/^##\s+.*(Personalized Evaluation|Benchmarks and Evaluation)/.test(line)) currentCat = 'Evaluation';
                 
                 // Parse table rows corresponding to papers
                 if (line.startsWith('|') && !line.includes('---') && !line.includes('Date | Paper Title') && !line.includes('Direction | Core Question')) {
