@@ -31,6 +31,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 
 <br>
+
 ## 🧠 Personalized Memory
 
 > ![#0f9f8f](https://img.shields.io/badge/-_#0f9f8f-0f9f8f?style=flat-square) *What should an agent store, update, retrieve, compress, and forget?*
@@ -73,6 +74,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.04 | [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | MIPT / AIRI / London Institute for Mathematical Sciences | AAAI 2024 | [booydar/recurrent-memory-transformer](https://github.com/booydar/recurrent-memory-transformer) <br> ![Stars](https://img.shields.io/github/stars/booydar/recurrent-memory-transformer?style=flat-square&logo=github) |
 
 <br>
+
 ## 🎯 Personalized Alignment
 
 > ![#7a4ef3](https://img.shields.io/badge/-_#7a4ef3-7a4ef3?style=flat-square) *How can a model adapt to individual preferences, personalities, and contexts?*
@@ -95,6 +97,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.10 | [Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging](https://arxiv.org/abs/2310.11564) | University of Washington / Allen Institute for AI / KAIST AI / UC San Diego | arXiv | [joeljang/RLPHF](https://github.com/joeljang/RLPHF) <br> ![Stars](https://img.shields.io/github/stars/joeljang/RLPHF?style=flat-square&logo=github) |
 
 <br>
+
 ## 🔍 Personalized Retrieval
 
 > ![#0b6b92](https://img.shields.io/badge/-_#0b6b92-0b6b92?style=flat-square) *How should systems select the right user context, memory, and evidence?*
@@ -116,6 +119,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.04 | [A Personalized Dense Retrieval Framework for Unified Information Access](https://arxiv.org/abs/2304.13654) | UMass Amherst / Lowe's | SIGIR 2023 | [HansiZeng/UIAA](https://github.com/HansiZeng/UIAA) <br> ![Stars](https://img.shields.io/github/stars/HansiZeng/UIAA?style=flat-square&logo=github) |
 
 <br>
+
 ## 📊 Benchmarks and Evaluation
 
 > ![#b45a00](https://img.shields.io/badge/-_#b45a00-b45a00?style=flat-square) *How do we evaluate long-term, dynamic, implicit, and multimodal personalization?*
