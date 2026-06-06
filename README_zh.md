@@ -4,7 +4,7 @@
 
 # Awesome Personalization in MLLMs
 
-> 面向个性化 LLM 和 MLLM 的系统性调研与前沿进展整理，覆盖 <span style="color:#0f9f8f"><b>个性化记忆</b></span>、<span style="color:#7a4ef3"><b>对齐</b></span>、<span style="color:#0b6b92"><b>检索</b></span>和<span style="color:#b45a00"><b>评估</b></span>。
+> 面向个性化 LLM 和 MLLM 的系统性调研与前沿进展整理，覆盖个性化 ![memory](https://img.shields.io/badge/memory-0f9f8f?style=flat-square)、![alignment](https://img.shields.io/badge/alignment-7a4ef3?style=flat-square)、![retrieval](https://img.shields.io/badge/retrieval-0b6b92?style=flat-square) 和 ![evaluation](https://img.shields.io/badge/evaluation-b45a00?style=flat-square)。
 
 [English README](./README.md) | [在线主页](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
