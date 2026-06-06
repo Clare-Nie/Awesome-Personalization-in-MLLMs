@@ -129,7 +129,7 @@
 
 ## Notes
 
-GitHub star 数量通过 shields.io 动态徽章显示。
+GitHub star 数量通过 shields.io 动态徽章显示。如果遗漏了相关工作，欢迎通过 issue 联系我们。
 
 ## 贡献
 
@@ -138,7 +138,3 @@ GitHub star 数量通过 shields.io 动态徽章显示。
 ## 引用
 
 如果这个列表对你有帮助，欢迎在仓库发布后 star 或引用。
-
-## License
-
-本仓库采用 MIT License。

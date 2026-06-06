@@ -130,12 +130,8 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 ## Notes
 
-GitHub star counts are displayed with dynamic shields.io badges.
+GitHub star counts are displayed with dynamic shields.io badges. If we missed any relevant work, please feel free to open an issue to contact us.
 
 ## Citation
 
 If this list is useful, please consider citing or starring the repository after publication.
-
-## License
-
-This repository is released under the MIT License.
