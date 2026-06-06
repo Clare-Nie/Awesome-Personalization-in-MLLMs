@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/title-v2.png" alt="Awesome Personalization in MLLMs" width="720">
+  <img src="./assets/logo.svg" alt="Awesome Personalization in MLLMs" width="720">
 </p>
 
 # Awesome Personalization in MLLMs
