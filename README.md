@@ -15,23 +15,23 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Direction | Core Question |
 | :--- | :--- |
-| ![Memory](https://img.shields.io/badge/🧠_Personalized_Memory-0f9f8f?style=flat-square) | What should an agent store, update, retrieve, compress, and forget? |
-| ![Alignment](https://img.shields.io/badge/🎯_Personalized_Alignment-7a4ef3?style=flat-square) | How can a model adapt to individual preferences, personalities, and contexts? |
-| ![Retrieval](https://img.shields.io/badge/🔍_Personalized_Retrieval-0b6b92?style=flat-square) | How should systems select the right user context, memory, and evidence? |
-| ![Evaluation](https://img.shields.io/badge/📊_Benchmarks_&_Evaluation-b45a00?style=flat-square) | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
+| **Personalized Memory** | What should an agent store, update, retrieve, compress, and forget? |
+| **Personalized Alignment** | How can a model adapt to individual preferences, personalities, and contexts? |
+| **Personalized Retrieval** | How should systems select the right user context, memory, and evidence? |
+| **Benchmarks and Evaluation** | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
 
 ## 📑 Table of Contents
 
-- [![Memory](https://img.shields.io/badge/Personalized_Memory-0f9f8f?style=flat-square)](#personalized-memory)
+- [Personalized Memory](#personalized-memory)
   - [Memory Architectures](#memory-architectures)
   - [Personalized Memory Architectures](#personalized-memory-architectures)
   - [Latent Memory Mechanisms](#latent-memory-mechanisms)
 
-- [![Alignment](https://img.shields.io/badge/Personalized_Alignment-7a4ef3?style=flat-square)](#personalized-alignment)
+- [Personalized Alignment](#personalized-alignment)
 
-- [![Retrieval](https://img.shields.io/badge/Personalized_Retrieval-0b6b92?style=flat-square)](#personalized-retrieval)
+- [Personalized Retrieval](#personalized-retrieval)
 
-- [![Evaluation](https://img.shields.io/badge/Benchmarks_&_Evaluation-b45a00?style=flat-square)](#benchmarks-and-evaluation)
+- [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 
 ## 🧠 Personalized Memory
 

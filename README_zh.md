@@ -15,23 +15,23 @@
 
 | 方向 | 核心问题 |
 | :--- | :--- |
-| ![Memory](https://img.shields.io/badge/🧠_个性化记忆-0f9f8f?style=flat-square) | agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？ |
-| ![Alignment](https://img.shields.io/badge/🎯_个性化对齐-7a4ef3?style=flat-square) | 模型如何适配个体偏好、人格和上下文？ |
-| ![Retrieval](https://img.shields.io/badge/🔍_个性化检索-0b6b92?style=flat-square) | 系统如何选择正确的用户上下文、记忆和证据？ |
-| ![Evaluation](https://img.shields.io/badge/📊_Benchmark_与评估-b45a00?style=flat-square) | 如何评测长期、动态、隐式、多模态的个性化能力？ |
+| **个性化记忆** | agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？ |
+| **个性化对齐** | 模型如何适配个体偏好、人格和上下文？ |
+| **个性化检索** | 系统如何选择正确的用户上下文、记忆和证据？ |
+| **Benchmark 与评估** | 如何评测长期、动态、隐式、多模态的个性化能力？ |
 
 ## 📑 Table of Contents
 
-- [![Memory](https://img.shields.io/badge/个性化记忆-0f9f8f?style=flat-square)](#个性化记忆)
+- [个性化记忆](#个性化记忆)
   - [基于记忆架构](#基于记忆架构)
   - [个性化记忆架构](#个性化记忆架构)
   - [Latent Memory 机制](#latent-memory-机制)
 
-- [![Alignment](https://img.shields.io/badge/个性化对齐-7a4ef3?style=flat-square)](#个性化对齐)
+- [个性化对齐](#个性化对齐)
 
-- [![Retrieval](https://img.shields.io/badge/个性化检索-0b6b92?style=flat-square)](#个性化检索)
+- [个性化检索](#个性化检索)
 
-- [![Evaluation](https://img.shields.io/badge/Benchmark_与评估-b45a00?style=flat-square)](#benchmark-与评估)
+- [Benchmark 与评估](#benchmark-与评估)
 
 ## 🧠 个性化记忆
 
