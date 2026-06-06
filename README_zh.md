@@ -95,6 +95,16 @@
 | 2026.05 | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](https://arxiv.org/abs/2605.07441) | - | arXiv | - |
 | 2026.05 | [An Agent-Oriented Pluggable Experience-RAG Skill for Experience-Driven Retrieval Strategy Orchestration](https://arxiv.org/abs/2605.21549) | - | arXiv | - |
 | 2026.05 | [From Volume to Value: Preference-Aligned Memory Construction for On-Device RAG](https://arxiv.org/abs/2605.18271) | - | arXiv | - |
+| 2025.01 | [Personalized Graph-Based Retrieval for Large Language Models (PGraphRAG)](https://arxiv.org/abs/2501.02157) | - | arXiv | - |
+| 2024.11 | [Pearl: Personalizing Large Language Model Writing Assistants with Generation-Calibrated Retrievers](https://aclanthology.org/2024.customnlp4u-1.16/) | Microsoft / Purdue | CustomNLP4U 2024 | - |
+| 2024.09 | [Crafting Personalized Agents through Retrieval-Augmented Generation on Editable Memory Graphs (EMG-RAG)](https://arxiv.org/abs/2409.19401) | - | arXiv | - |
+| 2024.07 | [PersonaRAG: Enhancing Retrieval-Augmented Generation Systems with User-Centric Agents](https://arxiv.org/abs/2407.09394) | - | arXiv | - |
+| 2024.07 | [MeMemo: On-device Retrieval Augmentation for Private and Personalized Text Generation](https://arxiv.org/abs/2407.01972) | Georgia Tech | SIGIR 2024 | [poloclub/mememo](https://github.com/poloclub/mememo) <br> ![Stars](https://img.shields.io/github/stars/poloclub/mememo?style=flat-square&logo=github) |
+| 2024.01 | [UniMS-RAG: A Unified Multi-source Retrieval-Augmented Generation for Personalized Dialogue Systems](https://arxiv.org/abs/2401.13256) | - | arXiv | - |
+| 2023.12 | [Learning Retrieval Augmentation for Personalized Dialogue Generation (LAPDOG)](https://arxiv.org/abs/2406.18847) | University of Surrey / SUSTech / ByteDance | EMNLP 2023 | [hqsiswiliam/LAPDOG](https://github.com/hqsiswiliam/LAPDOG) <br> ![Stars](https://img.shields.io/github/stars/hqsiswiliam/LAPDOG?style=flat-square&logo=github) |
+| 2023.07 | [Personalized Retrieval over Millions of Items (XPERT)](https://www.microsoft.com/en-us/research/publication/personalized-retrieval-over-millions-of-items/) | Microsoft Research | SIGIR 2023 | [personalizedretrieval/xpert](https://github.com/personalizedretrieval/xpert) <br> ![Stars](https://img.shields.io/github/stars/personalizedretrieval/xpert?style=flat-square&logo=github) |
+| 2023.07 | [PersonalTM: Transformer Memory for Personalized Retrieval](https://www.amazon.science/publications/personaltm-transformer-memory-for-personalized-retrieval) | Amazon | SIGIR 2023 | - |
+| 2023.04 | [A Personalized Dense Retrieval Framework for Unified Information Access](https://arxiv.org/abs/2304.13654) | UMass Amherst / Lowe's | SIGIR 2023 | - |
 
 
 ## Benchmark 与评估
