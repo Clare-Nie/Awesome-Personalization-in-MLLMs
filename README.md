@@ -50,7 +50,6 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026.05 | [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](https://arxiv.org/abs/2605.25007) | - | arXiv | - |
 | 2026.05 | [ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting](https://arxiv.org/abs/2605.05441) | - | arXiv | - |
 | 2026.05 | [Learning to Forget -- Hierarchical Episodic Memory for Lifelong Robot Deployment](https://arxiv.org/abs/2605.05812) | - | arXiv | - |
 | 2026.03 | [PersonaVLM: Long-Term Personalized Multimodal LLMs](https://github.com/MiG-NJU/PersonaVLM) | Nanjing University | CVPR 2026 | [MiG-NJU/PersonaVLM](https://github.com/MiG-NJU/PersonaVLM) <br> ![Stars](https://img.shields.io/github/stars/MiG-NJU/PersonaVLM?style=flat-square&logo=github) |
@@ -76,7 +75,6 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | :--- | :--- | :--- | :--- | :--- |
 | 2026.06 | [TriAlign: Towards Universal Truth Consistency in Personalized LLM Alignment](https://arxiv.org/abs/2606.01755) | - | arXiv | - |
 | 2026.06 | [Beyond Isolated Behaviors: Hierarchical User Modeling for LLM Personalization](https://arxiv.org/abs/2606.02300) | - | arXiv | - |
-| 2026.06 | [Preference-Aware Rubric Learning for Personalized Evaluation](https://arxiv.org/abs/2606.00040) | - | arXiv | - |
 | 2026.05 | [MATO: Multi-objective Personalized Alignment with Test-time Optimization for Large Language Models](https://arxiv.org/abs/2605.25342) | - | arXiv | - |
 | 2026.04 | [Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization](https://arxiv.org/abs/2604.22345) | - | arXiv | - |
 | 2026.03 | [PersonaVLM: Long-Term Personalized Multimodal LLMs](https://github.com/MiG-NJU/PersonaVLM) | Nanjing University | CVPR 2026 | [MiG-NJU/PersonaVLM](https://github.com/MiG-NJU/PersonaVLM) <br> ![Stars](https://img.shields.io/github/stars/MiG-NJU/PersonaVLM?style=flat-square&logo=github) |
@@ -94,20 +92,18 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026.05 | Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents | - | arXiv | - |
 | 2026.05 | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](https://arxiv.org/abs/2605.07441) | - | arXiv | - |
 | 2026.05 | [An Agent-Oriented Pluggable Experience-RAG Skill for Experience-Driven Retrieval Strategy Orchestration](https://arxiv.org/abs/2605.21549) | - | arXiv | - |
 | 2026.05 | [From Volume to Value: Preference-Aligned Memory Construction for On-Device RAG](https://arxiv.org/abs/2605.18271) | - | arXiv | - |
-| 2025.10 | [LightMem: Lightweight and Efficient Memory-Augmented Generation](https://arxiv.org/abs/2510.18866) | ZJUNLP | ICLR 2026 | [zjunlp/LightMem](https://github.com/zjunlp/LightMem) <br> ![Stars](https://img.shields.io/github/stars/zjunlp/LightMem?style=flat-square&logo=github) |
-| 2025.04 | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413) | Mem0 | arXiv | [mem0ai/mem0](https://github.com/mem0ai/mem0) <br> ![Stars](https://img.shields.io/github/stars/mem0ai/mem0?style=flat-square&logo=github) |
-| 2023.10 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | UC Berkeley | arXiv | [letta-ai/letta](https://github.com/letta-ai/letta) <br> ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&logo=github) |
 
 
 ## Benchmarks and Evaluation
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026.06 | [Preference-Aware Rubric Learning for Personalized Evaluation](https://arxiv.org/abs/2606.00040) | - | arXiv | - |
 | 2026.05 | [Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents (PerMemBench)](https://arxiv.org/abs/2605.25535) | KAIST | arXiv | [yeonjun-in/PerMemBench](https://github.com/yeonjun-in/PerMemBench) <br> ![Stars](https://img.shields.io/github/stars/yeonjun-in/PerMemBench?style=flat-square&logo=github) |
+| 2026.05 | [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](https://arxiv.org/abs/2605.25007) | - | arXiv | - |
 | 2026.04 | [From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents](https://arxiv.org/abs/2604.20006) | Arizona State University | arXiv | - |
 | 2026.04 | [Personalized Benchmarking: Evaluating LLMs by Individual Preferences](https://arxiv.org/abs/2604.18943) | University of Chicago | Findings of ACL 2026 | - |
 | 2026.04 | [CoPA: Benchmarking Personalized Question Answering with Data-Informed Cognitive Factors](https://arxiv.org/abs/2604.14773) | East China Normal University | arXiv | [bjzgcai/CoPA](https://github.com/bjzgcai/CoPA) <br> ![Stars](https://img.shields.io/github/stars/bjzgcai/CoPA?style=flat-square&logo=github) |
