@@ -66,6 +66,7 @@
 | 2025.03 | [AI-native Memory 2.0: Second Me](https://arxiv.org/abs/2503.08102) | Mindverse AI | arXiv | [Mindverse/Second-Me](https://github.com/Mindverse/Second-Me) <br> ![Stars](https://img.shields.io/github/stars/Mindverse/Second-Me?style=flat-square&logo=github) |
 | 2025.02 | [M+: Extending MemoryLLM with Scalable Long-Term Memory](https://arxiv.org/abs/2502.00592) | UC San Diego / MIT-IBM Watson AI Lab / IBM Research / Amazon | ICML 2025 | [wangyu-ustc/MemoryLLM](https://github.com/wangyu-ustc/MemoryLLM) <br> ![Stars](https://img.shields.io/github/stars/wangyu-ustc/MemoryLLM?style=flat-square&logo=github) |
 | 2024.06 | [AI-native Memory: A Pathway from LLMs Towards AGI](https://arxiv.org/abs/2406.18312) | Mindverse AI | arXiv | - |
+| 2024.02 | [MEMORYLLM: Towards Self-Updatable Large Language Models](https://arxiv.org/abs/2402.04624) | UC San Diego / Amazon / UCLA | ICML 2024 | [wangyu-ustc/MemoryLLM](https://github.com/wangyu-ustc/MemoryLLM) <br> ![Stars](https://img.shields.io/github/stars/wangyu-ustc/MemoryLLM?style=flat-square&logo=github) |
 | 2023.04 | [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | MIPT / AIRI / London Institute for Mathematical Sciences | AAAI 2024 | [booydar/recurrent-memory-transformer](https://github.com/booydar/recurrent-memory-transformer) <br> ![Stars](https://img.shields.io/github/stars/booydar/recurrent-memory-transformer?style=flat-square&logo=github) |
 
 
