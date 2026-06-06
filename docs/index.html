@@ -1,359 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awesome Personalization in MLLMs</title>
-  <meta name="description" content="The most comprehensive survey and frontier tracking repository for personalized LLMs and MLLMs, covering personalized memory, alignment, retrieval, and evaluation.">
-  <style>
-    :root {
-      --bg: #f7f8fb;
-      --panel: #ffffff;
-      --ink: #172033;
-      --muted: #5e6a7d;
-      --line: #dfe4ec;
-      --blue: #246bfe;
-      --teal: #0f9f8f;
-      --violet: #7a4ef3;
-      --chip: #eef3ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.55;
-    }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header {
-      background: linear-gradient(135deg, #ffffff 0%, #eef5ff 58%, #f4f0ff 100%);
-      border-bottom: 1px solid var(--line);
-    }
-    .wrap {
-      width: min(1120px, calc(100% - 36px));
-      margin: 0 auto;
-    }
-    .hero {
-      display: grid;
-      gap: 24px;
-      align-items: center;
-      padding: 46px 0 42px;
-    }
-    .title-art {
-      width: min(760px, 100%);
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 16px 45px rgba(31, 58, 118, 0.12);
-      display: block;
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.04;
-      letter-spacing: 0;
-    }
-    .subtitle {
-      margin: 0;
-      max-width: 820px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 38px;
-      padding: 8px 13px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      background: #fff;
-      color: var(--ink);
-      font-weight: 650;
-    }
-    main { padding: 30px 0 64px; }
-    .toolbar {
-      display: grid;
-      gap: 14px;
-      margin-bottom: 24px;
-    }
-    .search {
-      width: 100%;
-      height: 46px;
-      padding: 0 14px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      color: var(--ink);
-      font-size: 16px;
-    }
-    .tabs {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .tab {
-      border: 1px solid var(--line);
-      background: var(--panel);
-      color: var(--ink);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .tab.active {
-      color: #fff;
-      border-color: var(--blue);
-      background: var(--blue);
-    }
-    .section {
-      margin-top: 28px;
-    }
-    .section h2 {
-      margin: 0 0 14px;
-      font-size: 26px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
-      min-height: 164px;
-      box-shadow: 0 10px 28px rgba(23, 32, 51, 0.04);
-    }
-    .meta {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
-    .badge {
-      border-radius: 999px;
-      padding: 3px 9px;
-      font-size: 12px;
-      font-weight: 800;
-      background: var(--chip);
-      color: var(--blue);
-    }
-    .badge.memory { color: var(--teal); background: #e9fbf8; }
-    .badge.alignment { color: var(--violet); background: #f2edff; }
-    .badge.benchmark { color: #b45a00; background: #fff4e8; }
-    .badge.retrieval { color: #0b6b92; background: #e8f7ff; }
-    .date {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 650;
-    }
-    .card h3 {
-      margin: 0 0 9px;
-      font-size: 18px;
-      line-height: 1.32;
-    }
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-    .empty {
-      display: none;
-      padding: 24px;
-      border: 1px dashed var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      color: var(--muted);
-    }
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 24px 0;
-      color: var(--muted);
-      background: #fff;
-      font-size: 14px;
-    }
-    @media (max-width: 760px) {
-      .hero { padding: 32px 0 30px; }
-      .grid { grid-template-columns: 1fr; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Personalization in MLLMs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #ffffff; 
+            color: #111827; 
+        }
+        .stat-box { 
+            background-color: #f6f6f6; 
+            border-radius: 12px; 
+            padding: 16px 24px; 
+            text-align: center; 
+        }
+        .stat-num { 
+            font-size: 2.25rem; 
+            font-weight: 700; 
+            color: #111827; 
+            line-height: 1.2;
+        }
+        .stat-label { 
+            font-size: 0.875rem; 
+            color: #6b7280; 
+            margin-top: 4px; 
+        }
+        .paper-card { 
+            border: 1px solid #e5e7eb; 
+            border-radius: 12px; 
+            padding: 24px; 
+            margin-bottom: -1px; /* Overlap borders */
+            transition: all 0.2s; 
+            display: block; 
+            text-decoration: none; 
+            background: white;
+        }
+        .paper-card:first-child {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .paper-card:last-child {
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            margin-bottom: 0;
+        }
+        .paper-card:hover { 
+            border-color: #7a4ef3; 
+            box-shadow: 0 4px 12px rgba(122, 78, 243, 0.08); 
+            z-index: 10;
+            position: relative;
+        }
+        .filter-btn { 
+            border: 1px solid #e5e7eb; 
+            border-radius: 9999px; 
+            padding: 6px 16px; 
+            font-size: 0.875rem; 
+            color: #4b5563; 
+            transition: all 0.2s; 
+            cursor: pointer; 
+            white-space: nowrap; 
+            background: white;
+        }
+        .filter-btn:hover { 
+            border-color: #d1d5db; 
+            background-color: #f9fafb; 
+        }
+        .filter-btn.active { 
+            border-color: #7a4ef3; 
+            color: #7a4ef3; 
+        }
+        .cat-badge { 
+            padding: 4px 10px; 
+            border-radius: 9999px; 
+            font-size: 0.75rem; 
+            font-weight: 600; 
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <div class="wrap hero">
-      <img class="title-art" src="./title.png" alt="Awesome Personalization in MLLMs">
-      <div>
-        <h1>Awesome Personalization in MLLMs</h1>
-        <p class="subtitle">The most comprehensive survey and frontier tracking repository for personalized LLMs and MLLMs, covering <span style="color:#0f9f8f;font-weight:800">personalized memory</span>, <span style="color:#7a4ef3;font-weight:800">alignment</span>, <span style="color:#0b6b92;font-weight:800">retrieval</span>, and <span style="color:#b45a00;font-weight:800">evaluation</span>.</p>
-        <div class="links">
-          <a class="button" href="https://github.com/Clare-Nie/Awesome-Personalization-in-MLLMs">GitHub</a>
-          <a class="button" href="../README.md">English README</a>
-          <a class="button" href="../README_zh.md">中文 README</a>
+<body class="antialiased min-h-screen">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+        
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-12">
+            <div class="flex-1">
+                <h1 class="text-3xl font-bold text-gray-900 mb-3 tracking-tight">Awesome Personalization in MLLMs</h1>
+                <p class="text-gray-600 mb-5 text-[17px]">A curated collection of research on personalizing LLMs and MLLMs, covering memory, alignment, retrieval, and evaluation.</p>
+                <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-gray-200 text-xs font-medium text-gray-500 bg-white">
+                    <svg class="w-3.5 h-3.5 mr-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
+                    Auto-synced from GitHub README
+                </div>
+            </div>
+            
+            <div class="flex gap-4 shrink-0">
+                <div class="stat-box min-w-[110px]">
+                    <div class="stat-num" id="stat-papers">--</div>
+                    <div class="stat-label">Papers</div>
+                </div>
+                <div class="stat-box min-w-[130px]">
+                    <div class="stat-num" id="stat-years">----</div>
+                    <div class="stat-label">Coverage</div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <hr class="border-gray-100 mb-10">
+
+        <!-- Controls Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-2">
+            <div class="w-full md:w-96 relative">
+                <input type="text" id="searchInput" placeholder="Search titles, venues..." class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:border-[#7a4ef3] focus:ring-1 focus:ring-[#7a4ef3] transition shadow-sm">
+            </div>
+            
+            <div class="flex gap-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 hide-scrollbar" id="filterContainer">
+                <button class="filter-btn active" data-cat="All">All</button>
+                <button class="filter-btn" data-cat="Memory">Memory</button>
+                <button class="filter-btn" data-cat="Alignment">Alignment</button>
+                <button class="filter-btn" data-cat="Retrieval">Retrieval</button>
+                <button class="filter-btn" data-cat="Evaluation">Evaluation</button>
+            </div>
+        </div>
+        
+        <div class="text-[15px] font-medium text-gray-500 mb-10" id="countDisplay">Loading papers...</div>
+
+        <!-- Papers List -->
+        <div id="papersContainer" class="space-y-12"></div>
     </div>
-  </header>
 
-  <main class="wrap">
-    <div class="toolbar">
-      <input id="search" class="search" type="search" placeholder="Search papers, benchmarks, or keywords...">
-      <div class="tabs" aria-label="paper filters">
-        <button class="tab active" data-filter="all">All</button>
-        <button class="tab" data-filter="memory">Memory</button>
-        <button class="tab" data-filter="alignment">Alignment</button>
-        <button class="tab" data-filter="benchmark">Benchmark</button>
-        <button class="tab" data-filter="retrieval">Retrieval</button>
-      </div>
-    </div>
+    <script>
+        let allPapers = [];
+        
+        const catColors = {
+            'Memory': '#0f9f8f',
+            'Alignment': '#7a4ef3',
+            'Retrieval': '#0b6b92',
+            'Evaluation': '#b45a00'
+        };
 
-    <div class="empty" id="empty">No matching entries.</div>
+        async function init() {
+            try {
+                let text = '';
+                try {
+                    // Try to load local file first for Live Server / Local viewing
+                    const res = await fetch('../README.md');
+                    if (res.ok) text = await res.text();
+                    else throw new Error('Local file not found');
+                } catch (e) {
+                    // Fallback to fetch from raw github for GitHub Pages
+                    const res = await fetch('https://raw.githubusercontent.com/Clare-Nie/Awesome-Personalization-in-MLLMs/main/README.md');
+                    text = await res.text();
+                }
 
-    <section class="section">
-      <h2>Featured Papers and Benchmarks</h2>
-      <div class="grid" id="cards">
-        <article class="card" data-tags="memory agent long-term">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2023.10</span></div>
-          <h3><a href="https://arxiv.org/abs/2310.08560">MemGPT: Towards LLMs as Operating Systems</a></h3>
-          <p>OS-inspired memory management for LLM agents with explicit short-term and long-term memory operations.</p>
-        </article>
-        <article class="card" data-tags="memory agent zettelkasten locomo">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2025.02</span></div>
-          <h3><a href="https://arxiv.org/abs/2502.12110">A-Mem: Agentic Memory for LLM Agents</a></h3>
-          <p>Agentic memory organization for long-horizon dialogue, multi-hop reasoning, and temporal reasoning.</p>
-        </article>
-        <article class="card" data-tags="memory production graph retrieval">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2025.04</span></div>
-          <h3><a href="https://arxiv.org/abs/2504.19413">Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory</a></h3>
-          <p>Production-oriented long-term memory with scalable extraction, retrieval, and graph memory.</p>
-        </article>
-        <article class="card" data-tags="memory multimodal personalized">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2025.07</span></div>
-          <h3>MIRIX: Multi-Agent Memory System for LLM-Based Agents</h3>
-          <p>Multi-agent memory system for organizing and using long-term memories in LLM agents.</p>
-        </article>
-        <article class="card" data-tags="memory latent native rmt">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">AAAI 2024</span></div>
-          <h3>RMT: Scaling Transformer to 1M tokens and beyond</h3>
-          <p>Uses recurrent memory tokens to pass compressed hidden states across long sequence segments.</p>
-        </article>
-        <article class="card" data-tags="memory native latent ai-native">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2024.06</span></div>
-          <h3>AI-native Memory: A Pathway from LLMs Towards AGI</h3>
-          <p>Separates raw data, natural-language memory, and AI-native memory, arguing that long context is not persistent memory.</p>
-        </article>
-        <article class="card" data-tags="memory latent mplus memoryllm">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">ICML 2025</span></div>
-          <h3>M+: Extending MemoryLLM with Scalable Long-Term Memory</h3>
-          <p>Adds a long-term latent memory pool and co-trained retriever for hidden-state memory recall.</p>
-        </article>
-        <article class="card" data-tags="memory native secondme personal-model">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">2025.03</span></div>
-          <h3>AI-native Memory 2.0: Second Me</h3>
-          <p>Uses an L2 personal model as a context provider and orchestrator for user-centered interactions.</p>
-        </article>
-        <article class="card" data-tags="memory latent memgen reasoning">
-          <div class="meta"><span class="badge memory">Memory</span><span class="date">ICLR 2026</span></div>
-          <h3>MemGen: Weaving Generative Latent Memory</h3>
-          <p>Generates latent memory tokens during reasoning with a trigger-weaver architecture.</p>
-        </article>
-        <article class="card" data-tags="alignment personality activation">
-          <div class="meta"><span class="badge alignment">Alignment</span><span class="date">ICLR 2025</span></div>
-          <h3>Personality Alignment of Large Language Models</h3>
-          <p>Aligns model behavior with individual personality traits through personality data and activation-level interventions.</p>
-        </article>
-        <article class="card" data-tags="alignment interaction preference profile">
-          <div class="meta"><span class="badge alignment">Alignment</span><span class="date">2024.10</span></div>
-          <h3>Aligning LLMs with Individual Preferences via Interaction</h3>
-          <p>Learns user preferences through multi-turn interaction instead of relying only on static profiles.</p>
-        </article>
-        <article class="card" data-tags="alignment preference large-scale">
-          <div class="meta"><span class="badge alignment">Alignment</span><span class="date">2025.03</span></div>
-          <h3>ALIGNX: From 1,000,000 Users to Every User</h3>
-          <p>Builds scalable user-level preference data and preference spaces from large-scale user behavior.</p>
-        </article>
-        <article class="card" data-tags="benchmark personalization nlp">
-          <div class="meta"><span class="badge benchmark">Benchmark</span><span class="date">2023.04</span></div>
-          <h3>LaMP: When Large Language Models Meet Personalization</h3>
-          <p>Personalized NLP benchmark with seven classification and generation tasks conditioned on user profiles.</p>
-        </article>
-        <article class="card" data-tags="benchmark memory conversation locomo">
-          <div class="meta"><span class="badge benchmark">Benchmark</span><span class="date">2024.02</span></div>
-          <h3>LoCoMo: Evaluating Very Long-Term Conversational Memory of LLM Agents</h3>
-          <p>Tests long-term conversational memory over multi-session dialogues, often via LoCoMo-10 settings.</p>
-        </article>
-        <article class="card" data-tags="benchmark memory longmemeval abstention">
-          <div class="meta"><span class="badge benchmark">Benchmark</span><span class="date">ICLR 2025</span></div>
-          <h3>LONGMEMEVAL: Benchmarking Chat Assistants on Long-Term Interactive Memory</h3>
-          <p>Evaluates extraction, multi-session reasoning, updates, temporal reasoning, and abstention.</p>
-        </article>
-        <article class="card" data-tags="benchmark persona dynamic profile">
-          <div class="meta"><span class="badge benchmark">Benchmark</span><span class="date">COLM 2025</span></div>
-          <h3>PERSONAMEM: Dynamic User Profiling and Personalized Responses</h3>
-          <p>Evaluates personalized response selection under evolving user profiles and changing preferences.</p>
-        </article>
-        <article class="card" data-tags="benchmark multimodal personavlm mme">
-          <div class="meta"><span class="badge benchmark">Benchmark</span><span class="date">CVPR 2026</span></div>
-          <h3>Persona-MME from PersonaVLM</h3>
-          <p>Long-term multimodal personalization benchmark with 2034 in-situ test cases and 14 fine-grained tasks.</p>
-        </article>
-        <article class="card" data-tags="retrieval memory rag preference">
-          <div class="meta"><span class="badge retrieval">Retrieval</span><span class="date">Topic</span></div>
-          <h3>Personalized Memory Retrieval</h3>
-          <p>Retrieves user memories using semantic similarity, recency, importance, graph structure, and preference state.</p>
-        </article>
-        <article class="card" data-tags="retrieval storage gating permembench">
-          <div class="meta"><span class="badge retrieval">Retrieval</span><span class="date">2026.05</span></div>
-          <h3>PerMemBench: Personalize-then-Store</h3>
-          <p>Connects retrieval with storage gating: if important context is not stored, retrieval cannot recover it later.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+                parseReadme(text);
+                render();
+            } catch (err) {
+                document.getElementById('papersContainer').innerHTML = '<p class="text-red-500 font-medium">Failed to load data from repository. Please try again later.</p>';
+                console.error('Data Loading Error:', err);
+            }
+        }
 
-  <footer>
-    <div class="wrap">Maintained by Clare-Nie. Contributions are welcome.</div>
-  </footer>
+        function parseReadme(text) {
+            const lines = text.split('\n');
+            let currentCat = '';
+            
+            for (let line of lines) {
+                // Determine current section via headers
+                if (line.includes('Personalized Memory')) currentCat = 'Memory';
+                else if (line.includes('Personalized Alignment')) currentCat = 'Alignment';
+                else if (line.includes('Personalized Retrieval')) currentCat = 'Retrieval';
+                else if (line.includes('Benchmarks and Evaluation')) currentCat = 'Evaluation';
+                
+                // Parse table rows corresponding to papers
+                if (line.startsWith('|') && !line.includes('---') && !line.includes('Date | Paper Title') && !line.includes('Direction | Core Question')) {
+                    const parts = line.split('|').map(p => p.trim()).filter(p => p);
+                    // Match valid date format like 2026.05
+                    if (parts.length >= 4 && /^\d{4}\.\d{2}$/.test(parts[0])) {
+                        const date = parts[0];
+                        const year = date.split('.')[0];
+                        
+                        let title = parts[1];
+                        let url = '#';
+                        const titleMatch = title.match(/\[(.*?)\]\((.*?)\)/);
+                        if (titleMatch) {
+                            title = titleMatch[1];
+                            url = titleMatch[2];
+                        }
+                        
+                        const venue = parts[2];
+                        const pub = parts[3];
+                        
+                        let github = '';
+                        if (parts[4]) {
+                            const ghMatch = parts[4].match(/\[.*?\]\((.*?)\)/);
+                            if (ghMatch) github = ghMatch[1];
+                        }
+                        
+                        // Push robust paper object
+                        if (currentCat && currentCat !== '') {
+                            allPapers.push({
+                                date, year, title, url, venue, pub, github, category: currentCat
+                            });
+                        }
+                    }
+                }
+            }
+            
+            // Set header stats
+            document.getElementById('stat-papers').textContent = allPapers.length;
+            const years = allPapers.map(p => parseInt(p.year)).filter(y => !isNaN(y));
+            if (years.length > 0) {
+                document.getElementById('stat-years').textContent = `${Math.min(...years)}–${Math.max(...years)}`;
+            }
+        }
 
-  <script>
-    const tabs = Array.from(document.querySelectorAll('.tab'));
-    const cards = Array.from(document.querySelectorAll('.card'));
-    const search = document.getElementById('search');
-    const empty = document.getElementById('empty');
-    let filter = 'all';
+        function render() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const activeCat = document.querySelector('.filter-btn.active').dataset.cat;
+            
+            const filtered = allPapers.filter(p => {
+                const matchSearch = p.title.toLowerCase().includes(query) || p.venue.toLowerCase().includes(query);
+                const matchCat = activeCat === 'All' || p.category === activeCat;
+                return matchSearch && matchCat;
+            });
+            
+            document.getElementById('countDisplay').textContent = `Showing ${filtered.length} of ${allPapers.length} papers`;
+            
+            // Group by year
+            const grouped = {};
+            filtered.forEach(p => {
+                if (!grouped[p.year]) grouped[p.year] = [];
+                grouped[p.year].push(p);
+            });
+            
+            const sortedYears = Object.keys(grouped).sort((a,b) => b - a);
+            const container = document.getElementById('papersContainer');
+            container.innerHTML = '';
+            
+            sortedYears.forEach(year => {
+                const yearSection = document.createElement('div');
+                
+                // Elegant year heading
+                yearSection.innerHTML = `
+                    <h2 class="text-[17px] font-bold text-gray-500 tracking-wide mb-6 uppercase">${year}</h2>
+                    <div class="flex flex-col year-card-group"></div>
+                `;
+                
+                const groupContainer = yearSection.querySelector('.year-card-group');
 
-    function update() {
-      const q = search.value.trim().toLowerCase();
-      let shown = 0;
-      for (const card of cards) {
-        const text = card.innerText.toLowerCase() + ' ' + card.dataset.tags.toLowerCase();
-        const inFilter = filter === 'all' || card.dataset.tags.includes(filter);
-        const inSearch = !q || text.includes(q);
-        const visible = inFilter && inSearch;
-        card.style.display = visible ? '' : 'none';
-        if (visible) shown += 1;
-      }
-      empty.style.display = shown ? 'none' : 'block';
-    }
+                grouped[year].forEach(p => {
+                    const color = catColors[p.category] || '#888';
+                    const hex = color.replace('#', '');
+                    const r = parseInt(hex.substring(0,2), 16);
+                    const g = parseInt(hex.substring(2,4), 16);
+                    const b = parseInt(hex.substring(4,6), 16);
+                    
+                    const card = document.createElement('a');
+                    card.href = p.url;
+                    card.target = '_blank';
+                    card.className = 'paper-card group flex flex-col md:flex-row md:items-center justify-between gap-4';
+                    
+                    // Simple text tag for Github
+                    let ghHtml = p.github ? `
+                        <div class="mt-2 md:mt-0 flex items-center justify-center shrink-0">
+                            <object data="${p.github}" type="text/html" onclick="event.stopPropagation()">
+                                <a href="${p.github}" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center justify-center bg-gray-50 hover:bg-gray-100 text-[#7a4ef3] px-3 py-1.5 rounded-md text-sm font-medium transition border border-gray-200">
+                                    <svg class="w-4 h-4 mr-1.5 text-gray-500" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.026 1.592 1.026 2.683 0 3.842-2.339 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                                    Code
+                                </a>
+                            </object>
+                        </div>
+                    ` : '';
+                    
+                    card.innerHTML = `
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-[17px] font-semibold text-gray-900 group-hover:text-[#7a4ef3] transition mb-2.5 leading-snug">${p.title}</h3>
+                            <div class="flex flex-wrap items-center gap-2.5">
+                                <span class="cat-badge" style="background-color: rgba(${r},${g},${b},0.08); color: ${color}">${p.category}</span>
+                                <span class="text-sm font-medium bg-gray-100 text-gray-600 px-2 py-0.5 rounded">${p.date}</span>
+                                <span class="text-sm text-gray-500 bg-white border border-gray-100 px-2 py-0.5 rounded shadow-sm">${p.venue}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5 justify-end">
+                            ${ghHtml}
+                            <svg class="w-5 h-5 text-gray-300 group-hover:text-[#7a4ef3] transition shrink-0 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                    `;
+                    groupContainer.appendChild(card);
+                });
+                
+                container.appendChild(yearSection);
+            });
+        }
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        filter = tab.dataset.filter;
-        update();
-      });
-    });
-    search.addEventListener('input', update);
-  </script>
+        // Setup listeners
+        document.getElementById('searchInput').addEventListener('input', render);
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                render();
+            });
+        });
+
+        // Bootstrap
+        init();
+    </script>
 </body>
 </html>

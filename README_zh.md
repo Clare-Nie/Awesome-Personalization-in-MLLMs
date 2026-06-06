@@ -144,13 +144,13 @@
 | 2024.02 | [Evaluating Very Long-Term Conversational Memory of LLM Agents (LoCoMo)](https://arxiv.org/abs/2402.17753) | UNC Chapel Hill / Snap Inc. | ACL 2024 | [snap-research/locomo](https://github.com/snap-research/locomo) <br> ![Stars](https://img.shields.io/github/stars/snap-research/locomo?style=flat-square&logo=github) |
 | 2023.04 | [LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406) | UMass Amherst / Google Research | ACL 2024 | [LaMP-Benchmark/LaMP](https://github.com/LaMP-Benchmark/LaMP) <br> ![Stars](https://img.shields.io/github/stars/LaMP-Benchmark/LaMP?style=flat-square&logo=github) |
 
+<br>
+
 ## 📝 Notes
 
 GitHub star 数量通过 shields.io 动态徽章显示。如果遗漏了相关工作，欢迎通过 issue 联系我们。
 
-## 🤝 贡献
-
-欢迎补充论文、代码、benchmark、数据集和简短说明。请参考 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+<br>
 
 ## ✒️ 引用
 
