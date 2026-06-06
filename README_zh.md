@@ -2,7 +2,6 @@
   <img src="./assets/logo.svg" alt="Awesome Personalization in MLLMs" width="720">
 </p>
 
-# Awesome Personalization in MLLMs
 
 > 面向个性化 LLM 和 MLLM 的系统性调研与前沿进展整理，覆盖个性化 ![memory](https://img.shields.io/badge/memory-0f9f8f?style=flat-square)、![alignment](https://img.shields.io/badge/alignment-7a4ef3?style=flat-square)、![retrieval](https://img.shields.io/badge/retrieval-0b6b92?style=flat-square) 和 ![evaluation](https://img.shields.io/badge/evaluation-b45a00?style=flat-square)。
 
@@ -16,10 +15,10 @@
 
 | 方向 | 核心问题 |
 | :--- | :--- |
-| **个性化记忆** | agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？ |
-| **个性化对齐** | 模型如何适配个体偏好、人格和上下文？ |
-| **个性化检索** | 系统如何选择正确的用户上下文、记忆和证据？ |
-| **Benchmark 与评估** | 如何评测长期、动态、隐式、多模态的个性化能力？ |
+| ![Memory](https://img.shields.io/badge/🧠_个性化记忆-0f9f8f?style=flat-square) | agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？ |
+| ![Alignment](https://img.shields.io/badge/🎯_个性化对齐-7a4ef3?style=flat-square) | 模型如何适配个体偏好、人格和上下文？ |
+| ![Retrieval](https://img.shields.io/badge/🔍_个性化检索-0b6b92?style=flat-square) | 系统如何选择正确的用户上下文、记忆和证据？ |
+| ![Evaluation](https://img.shields.io/badge/📊_Benchmark_与评估-b45a00?style=flat-square) | 如何评测长期、动态、隐式、多模态的个性化能力？ |
 
 ## 📑 Table of Contents
 
@@ -31,6 +30,8 @@
 - [🤝 贡献](#贡献)
 
 ## 🧠 个性化记忆
+
+> ![#0f9f8f](https://img.shields.io/badge/-_#0f9f8f-0f9f8f?style=flat-square) *agent 应该存什么、更新什么、检索什么、压缩什么、遗忘什么？*
 
 ### 🏛️ 基于记忆架构
 
@@ -72,6 +73,8 @@
 
 ## 🎯 个性化对齐
 
+> ![#7a4ef3](https://img.shields.io/badge/-_#7a4ef3-7a4ef3?style=flat-square) *模型如何适配个体偏好、人格和上下文？*
+
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026.06 | [TriAlign: Towards Universal Truth Consistency in Personalized LLM Alignment](https://arxiv.org/abs/2606.01755) | Monash University | arXiv | - |
@@ -92,6 +95,8 @@
 
 ## 🔍 个性化检索
 
+> ![#0b6b92](https://img.shields.io/badge/-_#0b6b92-0b6b92?style=flat-square) *系统如何选择正确的用户上下文、记忆和证据？*
+
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026.05 | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](https://arxiv.org/abs/2605.06132) | MemTensor / China Telecom / Shanghai Jiao Tong University | arXiv | [MemTensor/MemOS](https://github.com/MemTensor/MemOS) <br> ![Stars](https://img.shields.io/github/stars/MemTensor/MemOS?style=flat-square&logo=github) |
@@ -110,6 +115,8 @@
 
 
 ## 📊 Benchmark 与评估
+
+> ![#b45a00](https://img.shields.io/badge/-_#b45a00-b45a00?style=flat-square) *如何评测长期、动态、隐式、多模态的个性化能力？*
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |

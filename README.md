@@ -2,7 +2,6 @@
   <img src="./assets/logo.svg" alt="Awesome Personalization in MLLMs" width="720">
 </p>
 
-# Awesome Personalization in MLLMs
 
 > The most comprehensive survey and frontier tracking repository for personalized LLMs and MLLMs, covering personalized ![Memory](https://img.shields.io/badge/memory-0f9f8f?style=flat-square), ![Alignment](https://img.shields.io/badge/alignment-7a4ef3?style=flat-square), ![Retrieval](https://img.shields.io/badge/retrieval-0b6b92?style=flat-square), and ![Evaluation](https://img.shields.io/badge/evaluation-b45a00?style=flat-square).
 
@@ -16,10 +15,10 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Direction | Core Question |
 | :--- | :--- |
-| **Personalized Memory** | What should an agent store, update, retrieve, compress, and forget? |
-| **Personalized Alignment** | How can a model adapt to individual preferences, personalities, and contexts? |
-| **Personalized Retrieval** | How should systems select the right user context, memory, and evidence? |
-| **Benchmarks and Evaluation** | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
+| ![Memory](https://img.shields.io/badge/🧠_Personalized_Memory-0f9f8f?style=flat-square) | What should an agent store, update, retrieve, compress, and forget? |
+| ![Alignment](https://img.shields.io/badge/🎯_Personalized_Alignment-7a4ef3?style=flat-square) | How can a model adapt to individual preferences, personalities, and contexts? |
+| ![Retrieval](https://img.shields.io/badge/🔍_Personalized_Retrieval-0b6b92?style=flat-square) | How should systems select the right user context, memory, and evidence? |
+| ![Evaluation](https://img.shields.io/badge/📊_Benchmarks_&_Evaluation-b45a00?style=flat-square) | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
 
 ## 📑 Table of Contents
 
@@ -31,6 +30,8 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 - [🤝 Contributing](#contributing)
 
 ## 🧠 Personalized Memory
+
+> ![#0f9f8f](https://img.shields.io/badge/-_#0f9f8f-0f9f8f?style=flat-square) *What should an agent store, update, retrieve, compress, and forget?*
 
 ### 🏛️ Memory Architectures
 
@@ -72,6 +73,8 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 ## 🎯 Personalized Alignment
 
+> ![#7a4ef3](https://img.shields.io/badge/-_#7a4ef3-7a4ef3?style=flat-square) *How can a model adapt to individual preferences, personalities, and contexts?*
+
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026.06 | [TriAlign: Towards Universal Truth Consistency in Personalized LLM Alignment](https://arxiv.org/abs/2606.01755) | Monash University | arXiv | - |
@@ -92,6 +95,8 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 ## 🔍 Personalized Retrieval
 
+> ![#0b6b92](https://img.shields.io/badge/-_#0b6b92-0b6b92?style=flat-square) *How should systems select the right user context, memory, and evidence?*
+
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026.05 | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](https://arxiv.org/abs/2605.06132) | MemTensor / China Telecom / Shanghai Jiao Tong University | arXiv | [MemTensor/MemOS](https://github.com/MemTensor/MemOS) <br> ![Stars](https://img.shields.io/github/stars/MemTensor/MemOS?style=flat-square&logo=github) |
@@ -110,6 +115,8 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 
 ## 📊 Benchmarks and Evaluation
+
+> ![#b45a00](https://img.shields.io/badge/-_#b45a00-b45a00?style=flat-square) *How do we evaluate long-term, dynamic, implicit, and multimodal personalization?*
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
