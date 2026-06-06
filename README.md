@@ -27,9 +27,15 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
   - [Personalized Memory Architectures](#personalized-memory-architectures)
   - [Latent Memory Mechanisms](#latent-memory-mechanisms)
 
+<br>
+
 - [Personalized Alignment](#personalized-alignment)
 
+<br>
+
 - [Personalized Retrieval](#personalized-retrieval)
+
+<br>
 
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 

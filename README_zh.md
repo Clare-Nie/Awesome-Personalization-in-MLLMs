@@ -27,9 +27,15 @@
   - [个性化记忆架构](#个性化记忆架构)
   - [Latent Memory 机制](#latent-memory-机制)
 
+<br>
+
 - [个性化对齐](#个性化对齐)
 
+<br>
+
 - [个性化检索](#个性化检索)
+
+<br>
 
 - [Benchmark 与评估](#benchmark-与评估)
 
