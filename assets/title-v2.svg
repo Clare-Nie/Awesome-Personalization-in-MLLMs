@@ -1,111 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1732" height="826" viewBox="0 0 1732 826" role="img" aria-labelledby="title desc">
-  <title id="title">Awesome Personalization in MLLMs</title>
-  <desc id="desc">A clean banner for a personalization survey, centered on human-AI interaction and four research areas: memory, alignment, retrieval, and evaluation.</desc>
+<svg width="800" height="260" viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="260" fill="#0d1117"/>
+
+  <!-- 暗黑系科技感微网格 -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f6fbfa"/>
-      <stop offset="0.55" stop-color="#f7f8ff"/>
-      <stop offset="1" stop-color="#fff9ef"/>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+    <!-- 顶部四色渐变线 -->
+    <linearGradient id="top-gradient" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f9f8f"/>
+      <stop offset="33%" stop-color="#7a4ef3"/>
+      <stop offset="66%" stop-color="#0b6b92"/>
+      <stop offset="100%" stop-color="#b45a00"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#152638" flood-opacity="0.14"/>
-    </filter>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="42"/>
-    </filter>
-    <style>
-      .title { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 78px; font-weight: 850; fill: #162231; letter-spacing: 0; }
-      .subtitle { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 30px; font-weight: 560; fill: #536273; letter-spacing: 0; }
-      .label { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 38px; font-weight: 820; fill: #172433; letter-spacing: 0; }
-      .micro { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 22px; font-weight: 650; fill: #627284; letter-spacing: 0; }
-      .card { fill: rgba(255,255,255,0.92); stroke: rgba(70,86,104,0.14); stroke-width: 2; }
-      .link { fill: none; stroke: #b9c9d9; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 10 14; }
-    </style>
   </defs>
+  <rect width="800" height="260" fill="url(#grid)"/>
 
-  <rect width="1732" height="826" fill="url(#bg)"/>
-  <g opacity="0.38" filter="url(#glow)">
-    <circle cx="296" cy="196" r="132" fill="#8fe1d4"/>
-    <circle cx="1438" cy="184" r="138" fill="#c6b7ff"/>
-    <circle cx="326" cy="666" r="132" fill="#8ec9f0"/>
-    <circle cx="1428" cy="654" r="132" fill="#ffd08a"/>
-  </g>
+  <!-- 顶部的彩色装饰细条 -->
+  <rect x="0" y="0" width="800" height="4" fill="url(#top-gradient)"/>
 
-  <text class="title" x="866" y="104" text-anchor="middle">Awesome Personalization in MLLMs</text>
-  <text class="subtitle" x="866" y="152" text-anchor="middle">Memory · Alignment · Retrieval · Evaluation</text>
+  <!-- 主标题文字 -->
+  <text x="400" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Awesome Personalization in MLLMs</text>
 
-  <g class="link" opacity="0.8">
-    <path d="M654 356C548 330 472 308 380 304"/>
-    <path d="M1078 356C1184 330 1260 308 1352 304"/>
-    <path d="M654 508C548 534 472 556 380 560"/>
-    <path d="M1078 508C1184 534 1260 556 1352 560"/>
-  </g>
+  <!-- 副标题文字 -->
+  <text x="400" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#8b949e" text-anchor="middle">A Comprehensive Survey and Frontier Tracking</text>
 
-  <g transform="translate(636 246)" filter="url(#shadow)">
-    <rect x="0" y="0" width="460" height="344" rx="38" fill="#ffffff" stroke="#d7e2ec" stroke-width="2"/>
+  <!-- 四大核心方向的彩色标签 (Pills) -->
+  <g transform="translate(130, 185)">
+    <!-- Memory -->
+    <rect x="0" y="0" width="115" height="30" rx="15" fill="#0f9f8f" fill-opacity="0.1" stroke="#0f9f8f" stroke-width="1.5"/>
+    <text x="57.5" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#0f9f8f" text-anchor="middle">Memory</text>
 
-    <g transform="translate(68 86)">
-      <circle cx="72" cy="42" r="34" fill="#0f9f8f"/>
-      <path d="M24 168c10-62 88-62 98 0" fill="#dff8f4" stroke="#0f9f8f" stroke-width="7" stroke-linecap="round"/>
-      <path d="M52 40c8 13 31 13 40 0" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
-    </g>
+    <!-- Alignment -->
+    <rect x="135" y="0" width="115" height="30" rx="15" fill="#7a4ef3" fill-opacity="0.1" stroke="#7a4ef3" stroke-width="1.5"/>
+    <text x="192.5" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#7a4ef3" text-anchor="middle">Alignment</text>
 
-    <g transform="translate(258 84)">
-      <rect x="0" y="0" width="122" height="122" rx="30" fill="#162231"/>
-      <circle cx="61" cy="61" r="34" fill="none" stroke="#ffffff" stroke-width="7"/>
-      <circle cx="61" cy="61" r="10" fill="#ffffff"/>
-      <path d="M61 15v-24M61 133v24M15 61h-24M133 61h24" stroke="#162231" stroke-width="9" stroke-linecap="round"/>
-      <circle cx="61" cy="-9" r="10" fill="#7a4ef3"/>
-      <circle cx="61" cy="157" r="10" fill="#b45a00"/>
-      <circle cx="-9" cy="61" r="10" fill="#0f9f8f"/>
-      <circle cx="157" cy="61" r="10" fill="#0b6b92"/>
-    </g>
+    <!-- Retrieval -->
+    <rect x="270" y="0" width="115" height="30" rx="15" fill="#0b6b92" fill-opacity="0.1" stroke="#0b6b92" stroke-width="1.5"/>
+    <text x="327.5" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#0b6b92" text-anchor="middle">Retrieval</text>
 
-    <path d="M190 154C218 122 245 121 275 154" fill="none" stroke="#7a4ef3" stroke-width="7" stroke-linecap="round"/>
-    <path d="M274 181C245 214 219 214 190 181" fill="none" stroke="#0b6b92" stroke-width="7" stroke-linecap="round"/>
-
-    <g transform="translate(98 236)">
-      <rect x="0" y="0" width="264" height="62" rx="22" fill="#f4f7fa" stroke="#d9e3ec" stroke-width="2"/>
-      <path d="M48 31c30-25 62-25 92 0s62 25 92 0" fill="none" stroke="#0f9f8f" stroke-width="6" stroke-linecap="round"/>
-      <circle cx="48" cy="31" r="8" fill="#0f9f8f"/>
-      <circle cx="140" cy="31" r="8" fill="#7a4ef3"/>
-      <circle cx="232" cy="31" r="8" fill="#0b6b92"/>
-    </g>
-  </g>
-
-  <g transform="translate(120 236)" filter="url(#shadow)">
-    <rect class="card" width="430" height="142" rx="26"/>
-    <rect x="30" y="30" width="82" height="82" rx="22" fill="#e5faf6"/>
-    <path d="M52 54h38v18H52zM46 76h50v20H46zM58 102h26" fill="none" stroke="#0f9f8f" stroke-width="6" stroke-linecap="round"/>
-    <text class="label" x="140" y="69">Memory</text>
-    <text class="micro" x="140" y="104">user history</text>
-  </g>
-
-  <g transform="translate(1182 236)" filter="url(#shadow)">
-    <rect class="card" width="430" height="142" rx="26"/>
-    <rect x="30" y="30" width="82" height="82" rx="22" fill="#f0edff"/>
-    <path d="M52 58h44M52 82h44M52 106h44" stroke="#7a4ef3" stroke-width="6" stroke-linecap="round"/>
-    <circle cx="68" cy="58" r="7" fill="#ffffff" stroke="#7a4ef3" stroke-width="5"/>
-    <circle cx="86" cy="82" r="7" fill="#ffffff" stroke="#7a4ef3" stroke-width="5"/>
-    <circle cx="62" cy="106" r="7" fill="#ffffff" stroke="#7a4ef3" stroke-width="5"/>
-    <text class="label" x="140" y="69">Alignment</text>
-    <text class="micro" x="140" y="104">individual preference</text>
-  </g>
-
-  <g transform="translate(120 504)" filter="url(#shadow)">
-    <rect class="card" width="430" height="142" rx="26"/>
-    <rect x="30" y="30" width="82" height="82" rx="22" fill="#eaf6ff"/>
-    <circle cx="65" cy="66" r="24" fill="none" stroke="#0b6b92" stroke-width="6"/>
-    <path d="M83 84l22 22M48 106h32" stroke="#0b6b92" stroke-width="6" stroke-linecap="round"/>
-    <text class="label" x="140" y="69">Retrieval</text>
-    <text class="micro" x="140" y="104">right context</text>
-  </g>
-
-  <g transform="translate(1182 504)" filter="url(#shadow)">
-    <rect class="card" width="430" height="142" rx="26"/>
-    <rect x="30" y="30" width="82" height="82" rx="22" fill="#fff1d8"/>
-    <path d="M52 62l12 12 25-30M52 96l12 12 25-30M94 60h12M94 96h12" fill="none" stroke="#b45a00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <text class="label" x="140" y="69">Evaluation</text>
-    <text class="micro" x="140" y="104">benchmarks</text>
+    <!-- Evaluation -->
+    <rect x="405" y="0" width="125" height="30" rx="15" fill="#b45a00" fill-opacity="0.1" stroke="#b45a00" stroke-width="1.5"/>
+    <text x="467.5" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#b45a00" text-anchor="middle">Evaluation</text>
   </g>
 </svg>

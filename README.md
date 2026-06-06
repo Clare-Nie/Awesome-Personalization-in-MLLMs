@@ -8,7 +8,7 @@
 
 [中文 README](./README_zh.md) | [Project Page](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
-## Overview
+## 📖 Overview
 
 Personalized LLMs and MLLMs aim to move beyond one-size-fits-all assistants. Instead of only optimizing for average human preference, they need to model a specific user: long-term goals, evolving preferences, implicit personas, multimodal context, and when personalization should or should not be applied.
 
@@ -21,18 +21,18 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | **Personalized Retrieval** | How should systems select the right user context, memory, and evidence? |
 | **Benchmarks and Evaluation** | How do we evaluate long-term, dynamic, implicit, and multimodal personalization? |
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Overview](#overview)
-- [Personalized Memory](#personalized-memory)
-- [Personalized Alignment](#personalized-alignment)
-- [Personalized Retrieval](#personalized-retrieval)
-- [Benchmarks and Evaluation](#benchmarks-and-evaluation)
-- [Contributing](#contributing)
+- [📖 Overview](#overview)
+- [🧠 Personalized Memory](#personalized-memory)
+- [🎯 Personalized Alignment](#personalized-alignment)
+- [🔍 Personalized Retrieval](#personalized-retrieval)
+- [📊 Benchmarks and Evaluation](#benchmarks-and-evaluation)
+- [🤝 Contributing](#contributing)
 
-## Personalized Memory
+## 🧠 Personalized Memory
 
-### Memory Architectures
+### 🏛️ Memory Architectures
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -46,7 +46,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.10 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | UC Berkeley | arXiv | [letta-ai/letta](https://github.com/letta-ai/letta) <br> ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&logo=github) |
 
 
-### Personalized Memory Architectures
+### 🧩 Personalized Memory Architectures
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,7 +58,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2025.07 | [MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957) | MIRIX AI | arXiv | [Mirix-AI/MIRIX](https://github.com/Mirix-AI/MIRIX) <br> ![Stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=flat-square&logo=github) |
 
 
-### Latent Memory Mechanisms
+### 🗜️ Latent Memory Mechanisms
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -70,7 +70,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.04 | [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | MIPT / AIRI / London Institute for Mathematical Sciences | AAAI 2024 | [booydar/recurrent-memory-transformer](https://github.com/booydar/recurrent-memory-transformer) <br> ![Stars](https://img.shields.io/github/stars/booydar/recurrent-memory-transformer?style=flat-square&logo=github) |
 
 
-## Personalized Alignment
+## 🎯 Personalized Alignment
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -90,7 +90,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.10 | [Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging](https://arxiv.org/abs/2310.11564) | University of Washington / Allen Institute for AI / KAIST AI / UC San Diego | arXiv | [joeljang/RLPHF](https://github.com/joeljang/RLPHF) <br> ![Stars](https://img.shields.io/github/stars/joeljang/RLPHF?style=flat-square&logo=github) |
 
 
-## Personalized Retrieval
+## 🔍 Personalized Retrieval
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -109,7 +109,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.04 | [A Personalized Dense Retrieval Framework for Unified Information Access](https://arxiv.org/abs/2304.13654) | UMass Amherst / Lowe's | SIGIR 2023 | [HansiZeng/UIAA](https://github.com/HansiZeng/UIAA) <br> ![Stars](https://img.shields.io/github/stars/HansiZeng/UIAA?style=flat-square&logo=github) |
 
 
-## Benchmarks and Evaluation
+## 📊 Benchmarks and Evaluation
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -128,10 +128,10 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2023.04 | [LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406) | UMass Amherst / Google Research | ACL 2024 | [LaMP-Benchmark/LaMP](https://github.com/LaMP-Benchmark/LaMP) <br> ![Stars](https://img.shields.io/github/stars/LaMP-Benchmark/LaMP?style=flat-square&logo=github) |
 
 
-## Notes
+## 📝 Notes
 
-GitHub star counts are displayed with dynamic shields.io badges. If we missed any relevant work, please feel free to open an issue to contact us.
+If we missed any relevant work, please feel free to open an issue to contact us.
 
-## Citation
+## ✒️ Citation
 
 If this list is useful, please consider citing or starring the repository after publication.

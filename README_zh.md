@@ -8,7 +8,7 @@
 
 [English README](./README.md) | [在线主页](https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/)
 
-## Overview
+## 📖 Overview
 
 个性化 LLM / MLLM 的目标，不只是让模型对“平均用户”表现更好，而是让模型理解一个具体用户：长期目标、动态偏好、隐式 persona、多模态上下文，以及什么时候应该使用个性化信息、什么时候不应该使用。
 
@@ -21,18 +21,18 @@
 | **个性化检索** | 系统如何选择正确的用户上下文、记忆和证据？ |
 | **Benchmark 与评估** | 如何评测长期、动态、隐式、多模态的个性化能力？ |
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Overview](#overview)
-- [个性化记忆](#个性化记忆)
-- [个性化对齐](#个性化对齐)
-- [个性化检索](#个性化检索)
-- [Benchmark 与评估](#benchmark-与评估)
-- [贡献](#贡献)
+- [📖 Overview](#overview)
+- [🧠 个性化记忆](#个性化记忆)
+- [🎯 个性化对齐](#个性化对齐)
+- [🔍 个性化检索](#个性化检索)
+- [📊 Benchmark 与评估](#benchmark-与评估)
+- [🤝 贡献](#贡献)
 
-## 个性化记忆
+## 🧠 个性化记忆
 
-### 基于记忆架构
+### 🏛️ 基于记忆架构
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -46,7 +46,7 @@
 | 2023.10 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | UC Berkeley | arXiv | [letta-ai/letta](https://github.com/letta-ai/letta) <br> ![Stars](https://img.shields.io/github/stars/letta-ai/letta?style=flat-square&logo=github) |
 
 
-### 个性化记忆架构
+### 🧩 个性化记忆架构
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,7 +58,7 @@
 | 2025.07 | [MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957) | MIRIX AI | arXiv | [Mirix-AI/MIRIX](https://github.com/Mirix-AI/MIRIX) <br> ![Stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=flat-square&logo=github) |
 
 
-### Latent Memory 机制
+### 🗜️ Latent Memory 机制
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -70,7 +70,7 @@
 | 2023.04 | [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | MIPT / AIRI / London Institute for Mathematical Sciences | AAAI 2024 | [booydar/recurrent-memory-transformer](https://github.com/booydar/recurrent-memory-transformer) <br> ![Stars](https://img.shields.io/github/stars/booydar/recurrent-memory-transformer?style=flat-square&logo=github) |
 
 
-## 个性化对齐
+## 🎯 个性化对齐
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -90,7 +90,7 @@
 | 2023.10 | [Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging](https://arxiv.org/abs/2310.11564) | University of Washington / Allen Institute for AI / KAIST AI / UC San Diego | arXiv | [joeljang/RLPHF](https://github.com/joeljang/RLPHF) <br> ![Stars](https://img.shields.io/github/stars/joeljang/RLPHF?style=flat-square&logo=github) |
 
 
-## 个性化检索
+## 🔍 个性化检索
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -109,7 +109,7 @@
 | 2023.04 | [A Personalized Dense Retrieval Framework for Unified Information Access](https://arxiv.org/abs/2304.13654) | UMass Amherst / Lowe's | SIGIR 2023 | [HansiZeng/UIAA](https://github.com/HansiZeng/UIAA) <br> ![Stars](https://img.shields.io/github/stars/HansiZeng/UIAA?style=flat-square&logo=github) |
 
 
-## Benchmark 与评估
+## 📊 Benchmark 与评估
 
 | 时间 | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
@@ -127,14 +127,14 @@
 | 2024.02 | [Evaluating Very Long-Term Conversational Memory of LLM Agents (LoCoMo)](https://arxiv.org/abs/2402.17753) | UNC Chapel Hill / Snap Inc. | ACL 2024 | [snap-research/locomo](https://github.com/snap-research/locomo) <br> ![Stars](https://img.shields.io/github/stars/snap-research/locomo?style=flat-square&logo=github) |
 | 2023.04 | [LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406) | UMass Amherst / Google Research | ACL 2024 | [LaMP-Benchmark/LaMP](https://github.com/LaMP-Benchmark/LaMP) <br> ![Stars](https://img.shields.io/github/stars/LaMP-Benchmark/LaMP?style=flat-square&logo=github) |
 
-## Notes
+## 📝 Notes
 
 GitHub star 数量通过 shields.io 动态徽章显示。如果遗漏了相关工作，欢迎通过 issue 联系我们。
 
-## 贡献
+## 🤝 贡献
 
 欢迎补充论文、代码、benchmark、数据集和简短说明。请参考 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
-## 引用
+## ✒️ 引用
 
 如果这个列表对你有帮助，欢迎在仓库发布后 star 或引用。
