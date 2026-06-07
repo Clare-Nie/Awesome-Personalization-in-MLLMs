@@ -76,6 +76,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026.06 | [Personal AI Agent for Camera Roll VQA](https://arxiv.org/abs/2606.05275) | University of Wisconsin-Madison / Korea University / Adobe Research | arXiv | [Project Page](https://thaoshibe.github.io/camroll) |
 | 2026.05 | [Personal Visual Memory from Explicit and Implicit Evidence](https://arxiv.org/abs/2605.28806) | Johns Hopkins University / University of Wisconsin-Madison / Adobe Research | arXiv | [viettmab/VisualMem](https://github.com/viettmab/VisualMem) <br> ![Stars](https://img.shields.io/github/stars/viettmab/VisualMem?style=flat-square&logo=github) |
 | 2026.04 | [EgoSelf: From Memory to Personalized Egocentric Assistant](https://arxiv.org/abs/2604.19564) | Peking University / The Hong Kong Polytechnic University | arXiv | [Project Page](https://abie-e.github.io/egoself_project/) |
 | 2026.04 | [Learning to Forget -- Hierarchical Episodic Memory for Lifelong Robot Deployment](https://arxiv.org/abs/2604.11306) | Karlsruhe Institute of Technology | arXiv | - |
