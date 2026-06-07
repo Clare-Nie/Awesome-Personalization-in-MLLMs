@@ -115,6 +115,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 | 2026.06 | [TriAlign: Towards Universal Truth Consistency in Personalized LLM Alignment](https://arxiv.org/abs/2606.01755) | Monash University | arXiv | - |
 | 2026.06 | [Beyond Isolated Behaviors: Hierarchical User Modeling for LLM Personalization](https://arxiv.org/abs/2606.02300) | Fudan University / Shanghai Innovation Institute / OPPO | arXiv | - |
 | 2026.05 | [MATO: Multi-objective Personalized Alignment with Test-time Optimization for Large Language Models](https://arxiv.org/abs/2605.25342) | Monash University / Defence Science and Technology Group Australia | arXiv | - |
+| 2026.04 | [Hierarchical Multi-Persona Induction from User Behavioral Logs: Learning Evidence-Grounded and Truthful Personas](https://arxiv.org/abs/2604.26120) | Emory University / Naver Corporation | arXiv | - |
 | 2026.04 | [Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization](https://arxiv.org/abs/2604.22345) | McGill University / Mila / MBZUAI / Salesforce | arXiv | - |
 | 2026.04 | [Beyond Static Personas: Situational Personality Steering for Large Language Models](https://arxiv.org/abs/2604.13846) | Singapore Management University | arXiv | - |
 | 2026.03 | [PersonaVLM: Long-Term Personalized Multimodal LLMs](https://github.com/MiG-NJU/PersonaVLM) | Nanjing University | CVPR 2026 | [MiG-NJU/PersonaVLM](https://github.com/MiG-NJU/PersonaVLM) <br> ![Stars](https://img.shields.io/github/stars/MiG-NJU/PersonaVLM?style=flat-square&logo=github) |
