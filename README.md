@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/">
-    <img src="./assets/logo.png" alt="Awesome Personalization in MLLMs" width="720">
+    <img src="./assets/logo.png" alt="Awesome Personalization in MLLMs" width="960">
   </a>
 </p>
 
