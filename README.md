@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/logo.svg" alt="Awesome Personalization in MLLMs" width="720">
+  <a href="https://clare-nie.github.io/Awesome-Personalization-in-MLLMs/">
+    <img src="./assets/logo.png" alt="Awesome Personalization in MLLMs" width="720">
+  </a>
 </p>
 
 
