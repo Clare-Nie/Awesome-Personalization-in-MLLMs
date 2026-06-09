@@ -96,6 +96,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026.06 | [FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context via Lookahead Sparse Attention](https://arxiv.org/abs/2606.09079) | Independent Researchers / Tencent / The Hong Kong University of Science and Technology (Guangzhou) / Tsinghua University | arXiv | [libertywing/FlashMemory-Deepseek-V4](https://github.com/libertywing/FlashMemory-Deepseek-V4) <br> ![Stars](https://img.shields.io/github/stars/libertywing/FlashMemory-Deepseek-V4?style=flat-square&logo=github) |
 | 2026.05 | [$\delta$-mem: Efficient Online Memory for Large Language Models](https://arxiv.org/abs/2605.12357) | SUTD / DeCLaRe Lab | arXiv | [declare-lab/delta-Mem](https://github.com/declare-lab/delta-Mem) <br> ![Stars](https://img.shields.io/github/stars/declare-lab/delta-Mem?style=flat-square&logo=github) |
 | 2026.02 | [Locas: Your Models are Principled Initializers of Locally-Supported Parametric Memories](https://arxiv.org/abs/2602.05085) | Tencent | arXiv | - |
 | 2026.01 | [FlashMem: Distilling Intrinsic Latent Memory via Computation Reuse](https://arxiv.org/abs/2601.05505) | Beihang University | arXiv | - |
