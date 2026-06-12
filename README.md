@@ -31,6 +31,7 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
   - [Latent Memory Mechanisms](#latent-memory-mechanisms)
 - [Personalized Alignment](#personalized-alignment)
 - [Personalized Retrieval](#personalized-retrieval)
+  - [Omni-modal Embedding Retrieval](#omni-modal-embedding-retrieval)
 - [Personalized Evaluation](#personalized-evaluation)
 
 <br>
@@ -145,6 +146,17 @@ This repository tracks papers, benchmarks, datasets, and systems around four con
 ## 🔍 Personalized Retrieval
 
 > ![#0b6b92](https://img.shields.io/badge/-_#0b6b92-0b6b92?style=flat-square) *How should systems select the right user context, memory, and evidence?*
+
+### Omni-modal Embedding Retrieval
+
+| Date | Paper Title | Venue | Publication | GitHub / Stars |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026.05 | [OmniRetriever: Any-to-Any Audio-Video-Text Retrieval via Fusion-as-Teacher Distillation](https://arxiv.org/abs/2605.26641) | University of Illinois Urbana-Champaign / Meta | arXiv | - |
+| 2026.04 | [MMEB-V3: Measuring the Performance Gaps of Omni-Modality Embedding Models](https://arxiv.org/abs/2604.23321) | Carnegie Mellon University / Google DeepMind / TIGER-Lab / University of Waterloo | arXiv | [MMEB Leaderboard](https://huggingface.co/spaces/TIGER-Lab/MMEB-Leaderboard) |
+| 2025.10 | [Omni-Embed-Nemotron: A Unified Multimodal Retrieval Model for Text, Image, Audio, and Video](https://arxiv.org/abs/2510.03458) | NVIDIA | arXiv | [nvidia/omni-embed-nemotron-3b](https://huggingface.co/nvidia/omni-embed-nemotron-3b) |
+| 2025.10 | [SAIL-Embedding Technical Report: Omni-modal Embedding Foundation Model](https://arxiv.org/abs/2510.12709) | ByteDance Douyin Content | arXiv | [BytedanceDouyinContent/SAIL-Embedding](https://huggingface.co/collections/BytedanceDouyinContent/sail-embedding-omni-modal-embedding-foundation-model-68ef7eb079c30e086d68aac6) |
+| 2025.09 | [WAVE: Learning Unified & Versatile Audio-Visual Embeddings with Multimodal LLM](https://arxiv.org/abs/2509.21990) | TCL Research America | ICLR 2026 | [TCL606/WAVE](https://github.com/TCL606/WAVE) <br> ![GitHub stars](https://badgen.net/github/stars/TCL606/WAVE?icon=github) |
+| 2025.01 | [VLM2Vec: Training Vision-Language Models for Massive Multimodal Embedding Tasks](https://arxiv.org/abs/2410.05160) | TIGER-Lab / University of Waterloo | ICLR 2025 | [TIGER-AI-Lab/VLM2Vec](https://github.com/TIGER-AI-Lab/VLM2Vec) <br> ![GitHub stars](https://badgen.net/github/stars/TIGER-AI-Lab/VLM2Vec?icon=github) |
 
 | Date | Paper Title | Venue | Publication | GitHub / Stars |
 | :--- | :--- | :--- | :--- | :--- |
